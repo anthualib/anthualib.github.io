@@ -1,0 +1,14 @@
+---
+layout: default
+title: "Writing"
+permalink: /writing
+---
+    <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>  <!-- Link to the full post -->
+            <small>Posted on {{ post.date | date: "%B %d, %Y" }}</small>
+            <p>{{ post.excerpt }}</p>  <!-- Show a short excerpt from the post -->
+          </li>
+        {% endfor %}
+      </ul>

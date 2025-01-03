@@ -1,0 +1,28 @@
+# Basic Site Settings
+title: The Peanut Buddha
+description: A collection of thoughts and writings
+url: "https://anthonyhua.com" # Update with your GitHub Pages URL
+
+# Directory for Posts
+collections:
+  blog:
+    output: true
+    permalink: /blog/:title/
+
+# Theme Settings
+
+# Plugins
+
+
+# Include Only Blog Files and Blog Page
+include:
+  - writing.html                    # Your main blog listing page
+  - blog                         # The entire blog folder (assuming blog is your folder name)
+
+exclude:
+  - index.html                           # Exclude everything else
+
+# Markdown Settings
+markdown: kramdown
+kramdown:
+input: GFM
