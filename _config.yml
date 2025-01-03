@@ -16,11 +16,10 @@ collections:
 
 # Include Only Blog Files and Blog Page
 include:
-  - writing.html                    # Your main blog listing page
+  - writing                    # Your main blog listing page
   - blog                         # The entire blog folder (assuming blog is your folder name)
 
-exclude:
-  - index.html                           # Exclude everything else
+exclude: [index.html]                       # Exclude everything else
 
 # Markdown Settings
 markdown: kramdown
