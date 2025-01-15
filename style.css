@@ -230,6 +230,10 @@ body {
     padding: 10px 20px 10px;
 }
 
+.post h2 {
+    font-size: clamp(var(--size-text-xlarge),5vw,5rem);
+}
+
 .onedot{
     border: 0;
     border-top: 10px dotted lightgrey; /* Dotted line */
