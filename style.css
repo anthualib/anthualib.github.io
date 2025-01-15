@@ -1,0 +1,966 @@
+/*Fonts stuff*/
+@font-face {
+    font-family: "Recoleta";
+    src: url(/fonts/Recoleta-Black.ttf);
+}
+@font-face {
+    font-family: "Lazybones";
+    src: url(/fonts/Lazybones.ttf);
+}
+
+@font-face {
+    font-family: "Aptos";
+    src: url("/fonts/Aptos-Display.ttf");
+    font-weight: 400; /* Regular weight */
+    font-style: normal; /* Normal style */
+}
+
+@font-face {
+    font-family: "Aptos";
+    src: url("/fonts/Aptos-Display-Bold.ttf");
+    font-weight: 600; /* Bold weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aptos";
+    src: url("/fonts/Aptos-Display-Italics.ttf");
+    font-weight: 400; /* Bold weight */
+    font-style: normal; /* bold style */
+}
+
+/*variables*/
+:root {
+    --orange: #be5103;
+    --black: black;
+    --grey: #636363;
+    --green: #7e846b;
+    --title-font: "Recoleta", sans-serif;
+    --logo-font: "Lazybones", sans-serif;
+    --shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+    --longshadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+#bio {
+    margin:0px;
+    padding:0px;
+}
+
+@media screen and (max-height: 1000px) {
+    .hello {
+        height: 100vh;
+      }
+}
+ 
+@media screen and (min-height: 1000px) {
+    .hello {
+        height: auto;
+      }
+}
+
+@media screen and (min-width: 780px) {
+
+    .mobileinclude {
+    display:none;
+    }
+
+    .mobileexclude {
+        display: block;
+    }
+
+    /*page formatting*/
+    main {
+        text-align: center;
+        font-size: 18px;
+        margin: 0px auto;
+        width: 900px;
+      }
+
+      .profile {
+        text-align: center;
+        font-size: 18px;
+        margin: 0px auto;
+        width: 900px;
+        margin-top: 50px;
+      }
+
+
+    
+      main p {
+        margin: 10px 0px 10px;
+      }
+
+
+.three-column-grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr; /* Left: 1 unit, Middle: 5 units, Right: 1 unit */
+    gap: 10px; /* Space between columns */
+  }
+  
+  .sidecolumn {
+    padding: 10px 30px;
+    text-align: center;
+    position: relative; /* Makes the container the reference point for absolute positioning */
+    overflow: visible;
+}
+
+.columns {
+    display: flex;
+    width: 100%; /* Ensures full screen width */
+    align-items: center;
+    justify-content: center;
+    margin: 0% auto 3%;
+    gap:12px;
+}
+
+.columns p {
+    padding: 0px 25px 0px
+}
+
+/* First column - 33% */
+.column-33 {
+    flex: 0 0 33%; /* Flex-grow: 0, Flex-shrink: 0, Width: 33% */
+}
+
+/* Second column - 66% */
+.column-66 {
+    flex: 0 0 66%; /* Flex-grow: 0, Flex-shrink: 0, Width: 66% */
+}
+
+
+/*text formatting*/
+h1 {
+    color: var(--orange);
+    font-family: var(--logo-font);
+    font-size: 65px;
+    text-shadow: var(--shadow);
+    margin: 10px 20px 10px; /*top, sides, bottom*/
+}
+
+h2 {
+    color: var(--black);
+    font-family: var(--title-font);
+    font-size: 30px;
+    margin: 10px 0px 10px;
+}
+
+h3 {
+    color: var(--black);
+    font-family: var(--title-font);
+    font-size: 22px;
+    margin: 10px 0px 0px;
+    
+}
+
+h4 {
+    font-family: var(--title-font);
+    color: var(--black);
+    margin: 10px 0px 0px;
+    font-size: 18x;
+}
+
+.centered-list {
+    text-align: center; /* Centers the list as a block */
+  }
+  
+  ul {
+    display: inline-block; /* Allows the list to shrink-wrap around its items */
+    text-align: left; /* Aligns the text and bullets to the left inside the block */
+    padding: 0; /* Removes extra padding around the list */
+    margin: 0; /* Removes default margin */
+  }
+  
+  ul li {
+    list-style-position: inside; /* Ensures the bullets stay aligned with text */
+  }
+
+.logo a {
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+    display: inline-block; /* Ensure the link is treated as a block for transform */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+    border-bottom: none;
+}
+
+.logo a:hover {
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);;
+    transform: translate(2px, 2px); /* Moves the link 2px right and 2px down */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+}
+
+.logomini {
+    font-size: 45px;
+}
+
+.logomini a {
+    text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.2);
+    display: inline-block; /* Ensure the link is treated as a block for transform */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+    border-bottom: none;
+}
+
+.logomini a:hover {
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);;
+    transform: translate(1.5px, 1.5px); /* Moves the link 2px right and 2px down */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+}
+
+a {
+    color: var(--orange);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover {
+    color: var(--orange);
+    text-decoration: none;
+    border-bottom-color: var(--orange);
+}
+
+body {
+    font-family: "Aptos";
+    color:var(--grey);
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.bio{
+    font-size: 24px;
+    padding: 10px 20px 10px;
+}
+
+.onedot{
+    border: 0;
+    border-top: 10px dotted lightgrey; /* Dotted line */
+    margin: 40px auto 30px;   
+    width: 20px;
+}
+
+.threedots{
+    border: 0;
+    border-top: 10px dotted lightgrey; /* Dotted line */
+    margin: 20px auto 30px;   
+    width: 70px;            
+}
+
+.container {
+    margin: 20px 0px 50px;
+}
+
+/*Images*/
+
+a img {
+    border-radius: 1px;
+    box-shadow: none;
+    width: 90%;
+    margin: 0 auto
+}
+
+img {
+    border-radius: 30px;
+    box-shadow: var(--longshadow);
+    width: 60%;
+    margin: 0 auto
+}
+
+.socials img {
+    border-radius: 0px;
+    width: 30px;
+    box-shadow: none;
+
+}
+
+.profile-link {
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.profile-link img {
+    display: block;
+    margin: 0 auto; /* Adjust spacing here */
+    width:40px;
+}
+
+.profilepic {
+    border-radius: 100px;
+    box-shadow: var(--longshadow);
+    width: 144px;
+}
+
+/*Navigation bar*/
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+    width: 100%; /* Ensure full width of the container */
+    gap: 10px;
+    padding-top: 8px;
+  }
+  
+  .navleft {
+    padding: 5px 20px 5px;
+  }
+  
+  .navright {
+    padding: 5px 20px 5px;
+  }
+
+  .navright ul {
+    justify-content: end;
+  }
+
+.navmenu{
+  list-style-type: none; /* Removes bullets */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Makes the list horizontal */
+  gap: 50px; /* Adds spacing between items */
+  font-family: var(--title-font);
+  justify-content: center; /* Centers the entire menu within its container */
+  align-items: center; /* Vertically centers items */
+  font-size: 26px;
+}
+
+.navmenu2{
+    list-style-type: none; /* Removes bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Makes the list horizontal */
+    gap: 30px; /* Adds spacing between items */
+    font-family: var(--title-font);
+    justify-content: center; /* Centers the entire menu within its container */
+    align-items: center; /* Vertically centers items */
+    font-size: 24px;
+    text-align: center;
+    }
+
+/*Dropdown Menu*/
+.navmenu {
+    list-style-type: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* The dropdown content (hidden by default) */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    right:0;
+    top: 120%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    position: absolute;
+    background-color: var(--orange); /* Background color for dropdown */
+    z-index: 1;
+    padding: 0px; /* Remove padding if the list appears off */
+    list-style: none; /* Remove bullet points if present */
+    width: 180px; /* Adjust as needed */
+}
+
+/* Individual dropdown links */
+.dropdown .dropdown-content a {
+    display: block; /* Stack items vertically */
+    padding: 10px 15px; /* Add spacing for better appearance */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Default text color */
+    box-sizing: border-box; /* Ensures border doesn't affect dimensions */
+}
+
+/* Hover effect for dropdown links */
+.dropdown .dropdown-content a:hover {
+    background-color: white; /* Highlight on hover */
+    color: var(--orange);
+    border: 2px solid var(--orange); /* Add border without affecting size */
+    border-width: 1px; /* Ensure the border is consistent */
+    border-radius: 5px;
+}
+
+/* Show the dropdown menu when active */
+.dropdown .dropdown-content.show {
+    display: block;
+}
+
+    .buttoncontainer {
+            width:180px;
+            display: flex;
+            text-align: center; 
+            justify-content: center;
+            align-items: center;
+          }
+
+    .float {
+        top: 80px;
+        position: sticky;
+        z-index: 10;
+        height: 10em;
+        position: fixed;
+        margin: 0px auto;
+    }
+
+    .jump {
+        margin: 0px auto;
+        padding: 20px 5px 0px;
+        font-size: 12px;
+        text-align: left;
+        line-height: 1.7;
+        position: absolute;   /* Fixes this section in place */
+        width:200px;
+    }
+    
+    .jump ul {
+        list-style-type: none; 
+        padding: 0px 10px;
+ 
+    }
+
+
+    button {
+        list-style-type: none; /* Removes bullets */
+        padding: 0;
+        margin: 0px 10px 0px;
+        display: flex; /* Makes the list horizontal */
+        font-family: var(--title-font);
+        color: var(--orange);
+        justify-content: center; /* Centers the entire menu within its container */
+        align-items: center; /* Vertically centers items */
+        font-size: 24px;
+        background-color: white;
+        border: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        list-style-type: none; /* Removes bullets */
+        padding: 0;
+        margin: 0px 10px 0px;
+        display: flex; /* Makes the list horizontal */
+        font-family: var(--title-font);
+        color: var(--orange);
+        justify-content: center; /* Centers the entire menu within its container */
+        align-items: center; /* Vertically centers items */
+        font-size: 24px;
+        cursor: pointer;
+        border-bottom: 2px solid var(--orange);
+    }
+
+  .button {
+    display: inline-block;
+    color: white;
+    background-color: var(--orange);
+    border: none;
+    padding: 5px 10px; /* Padding for the button */
+    border-color: #be5103;
+    border-radius:5px;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: var(--longshadow);
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+
+.button:hover {
+    display: inline-block;
+    color: white;
+    background-color: var(--orange);
+    border: none;
+    padding: 5px 10px; /* Padding for the button */
+    border-color: #be5103;
+    border-radius:5px;
+    border-width: 3px;
+    border-style: solid;
+    transform: translate(4px, 4px);
+    box-shadow: var(--shadow);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.bigbutton {
+    display: inline-block;
+    font-size: 20px;
+    font-family: var(--title-font);
+    background-color: var(--orange);
+    color: white;
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    border-color: #be5103;
+    border-radius:5px;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: var(--longshadow);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+     }
+
+.bigbutton:hover {
+    font-size: 20px;
+    font-family: var(--title-font);
+    background-color: var(--orange);
+    color: white;
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    border-color: #be5103;
+    border-radius:5px;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: var(--shadow);
+    transform: translate(4px, 4px);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.bigbutton.active {
+    font-size: 20px;
+    font-family: var(--title-font);
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-color: #be5103;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: var(--shadow);
+    transform: translate(4px, 4px);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+
+/*Socials Spread*/
+.socials {
+    margin: 35px 0px 20px
+}
+
+.sociallist{
+    list-style-type: none; /* Removes bullets */
+    padding: 0;
+    margin: 24px 0px 24px;
+    display: flex; /* Makes the list horizontal */
+    gap: 50px; /* Adds spacing between items */
+    justify-content: center; /* Centers the entire menu within its container */
+    align-items: center; /* Vertically centers items */
+}
+
+.sociallist img {
+    width: 30px;
+}
+
+
+.currentrolescontainer {
+    display: grid;
+    grid-template-columns: auto auto auto; /* 3 equal-width columns */
+    grid-template-rows: auto auto;
+    align-items: center;
+}
+
+.gridbox {
+    padding: 0px 6px 0px;
+}
+
+.tallgridbox {
+    padding: 6px;
+    grid-column: span 1;
+    grid-row: span 2;
+    
+}
+
+.longgridbox {
+    padding: 0px 6px 0px;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.borderbox {
+    border-color: #be5103;
+    border-radius: 33px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px 10px 10px;
+    box-shadow: var(--longshadow);
+    margin: 10px 0px 10px;
+}
+
+.borderboxgreen {
+    border-color: var(--green);
+    border-radius: 33px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px 10px 10px;
+    box-shadow: var(--longshadow);
+    margin: 10px 0px 10px;
+}
+
+/*Blog stuff*/
+.blogpost {
+    color: var(--black);
+}
+
+.blogpost a {
+    color: var(--black);
+}
+
+footer {
+    margin: 0 auto; /* Center the footer horizontally */
+    padding: 0 100px; /* Padding from left and right */
+    text-align: center; 
+    justify-content: center; 
+    display: flex; 
+    flex-wrap: wrap; /* Allow text to wrap */
+    font-size: 16px; 
+    background-color: var(--orange); 
+    color: white; /* Text color set to white */
+    bottom: 0; /* Position at the bottom */
+    height: 200px; /* Optional height, adjust as needed */
+}
+
+.footercontainer {
+    width: 100vw;
+}
+
+}
+
+
+@media screen and (max-width: 780px) {
+    
+    .three-column-grid {
+    }
+
+    .sidecolumn {
+        display: none;
+    }
+
+    main {
+        padding: 0%;
+        text-align: center;
+        font-size: 18px;
+        margin: 2% auto;
+        width: 95%;
+        max-width: 480px;
+    }
+    
+    main p {
+        padding: 0px 0px 1px;
+    }
+
+    h1 {
+        color: var(--orange);
+        font-family: var(--logo-font);
+        font-size: 65px;
+        text-shadow: var(--shadow);
+        margin: 10px 20px 10px; /*top, sides, bottom*/
+    }
+    
+    h2 {
+        color: var(--black);
+        font-family: var(--title-font);
+    }
+    
+    h3 {
+        color: var(--black);
+        font-family: var(--title-font);
+        margin: 1-px 0px 0px;
+    }
+    
+    h4 {
+        font-family: var(--title-font);
+        color: var(--black);
+        margin: 10px 0px 0px;
+    }
+    
+    .logo a {
+        text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+        display: inline-block; /* Ensure the link is treated as a block for transform */
+        transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+        border-bottom: none;
+    }
+    
+    .logo a:hover {
+        text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);;
+        transform: translate(2px, 2px); /* Moves the link 2px right and 2px down */
+        transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+    }
+    
+    .logomini a {
+        text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.2);
+        display: inline-block; /* Ensure the link is treated as a block for transform */
+        transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+        border-bottom: none;
+    }
+    
+    .logomini a:hover {
+        text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);;
+        transform: translate(1.5px, 1.5px); /* Moves the link 2px right and 2px down */
+        transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+    }
+    
+    
+    a {
+        color: var(--orange);
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom-color 0.3s ease, border-bottom-width 0.3s ease;
+    }
+    
+    a:hover {
+        color: var(--orange);
+        text-decoration: none;
+        text-shadow: none;
+        border-bottom-color: var(--orange);
+        transition: border-bottom-color 0.3s ease, border-bottom-width 0.3s ease;
+    }
+    
+    body {
+        font-family: "Aptos";
+        color:var(--grey);
+    }
+    
+    .bio{
+        font-size: 23px;
+        padding: 10px 20px 10px;
+    }
+    
+    /*Images*/
+    
+    img {
+        border-radius: 30px;
+        box-shadow: var(--longshadow);
+    }
+    
+    .socials img {
+        border-radius: 0px;
+        width: 30px;
+        box-shadow: none;
+    }
+    
+    .profilepic {
+        border-radius: 100px;
+        box-shadow: var(--longshadow);
+        width: 144px;
+    }
+
+/*Navigation bar*/
+    nav {
+        display: grid;
+        width: 100%; /* Ensure full width of the container */
+        margin: 0px auto;
+        gap: 10px;
+      }
+    
+    .navright {
+        padding: 5px 20px 5px;
+      }
+    
+    .navmenu{
+        list-style-type: none; /* Removes bullets */
+        padding: 0;
+        margin: 0;
+        display: flex; /* Makes the list horizontal */
+        gap: 30px; /* Adds spacing between items */
+        font-family: var(--title-font);
+        justify-content: center; /* Centers the entire menu within its container */
+        align-items: center; /* Vertically centers items */
+        font-size: 5vw;
+      }
+    
+      .navmenu2{
+        list-style-type: none; /* Removes bullets */
+        padding: 0;
+        margin: 0px 10px 0px;
+        display: flex; /* Makes the list horizontal */
+        font-family: var(--title-font);
+        justify-content: center; /* Centers the entire menu within its container */
+        align-items: center; /* Vertically centers items */
+        font-size: 24px;
+        }
+        .navmenu2 li{
+            width:170px;
+        }
+        
+      .navmenu2 p{
+        display:none;
+      }
+
+
+
+
+      img {
+        border-radius: 30px;
+        box-shadow: var(--longshadow);
+        width: 90%;
+    }
+
+    .button {
+        display: inline-block;
+        color: white;
+        background-color: var(--orange);
+        border: none;
+        padding: 5px 10px; /* Padding for the button */
+        border-color: #be5103;
+        border-radius:5px;
+        border-width: 3px;
+        border-style: solid;
+        box-shadow: var(--longshadow);
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+    
+        }
+    
+    
+    .button:hover {
+        display: inline-block;
+        color: white;
+        background-color: var(--orange);
+        border: none;
+        padding: 5px 10px; /* Padding for the button */
+        border-color: #be5103;
+        border-radius:5px;
+        border-width: 3px;
+        border-style: solid;
+        transform: translate(4px, 4px);
+        box-shadow: var(--shadow);
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+    
+
+
+    .sticky {
+        position: sticky;
+        z-index: 10;
+        top: 40px;
+        margin:0px 10px;
+        }
+    
+    .socials img {
+        border-radius: 0px;
+        width: 30px;
+        box-shadow: none;
+    }
+
+    .sociallist{
+        list-style-type: none; /* Removes bullets */
+        padding: 0;
+        margin: 40px 0px 20px;
+        display: flex; /* Makes the list horizontal */
+        gap: 80px; /* Adds spacing between items */
+        justify-content: center; /* Centers the entire menu within its container */
+        align-items: center; /* Vertically centers items */
+    }
+    
+    .sociallist img {
+        width: 50px;
+    }
+
+    .mobileexclude {
+        display: none;
+    }
+
+    .mobileinclude {
+        display: flex; /* Enables flexbox for alignment */
+        justify-content: center; /* Centers content horizontally */
+        align-items: center; /* Centers content vertically */
+    }
+
+    .borderbox {
+        border-color: #be5103;
+        border-radius: 33px;
+        border-width: 2px;
+        border-style: solid;
+        padding: 0px 20px 0px;
+        box-shadow: var(--longshadow);
+        margin: 10px 0px 0px;
+    }
+    
+    .borderboxgreen {
+        border-color: var(--green);
+        border-radius: 33px;
+        border-width: 2px;
+        border-style: solid;
+        padding: 10px 10px 10px;
+        box-shadow: var(--longshadow);
+        margin: 10px 0px 10px;
+    }
+
+    footer {
+        margin: 0px auto;
+        padding: 0px 10px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        font-size:12px
+    }
+
+    .onedot{
+        border: 0;
+        border-top: 10px dotted lightgrey; /* Dotted line */
+        margin: 40px auto 30px;   
+        width: 10px;
+    }
+    
+    .threedots{
+        border: 0;
+        border-top: 10px dotted lightgrey; /* Dotted line */
+        margin: 50px auto 30px;   
+        width: 50px;
+    }
+
+    .profile-link {
+        font-size: 18px;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        margin: 20px auto;
+    }
+    
+    .profile-link img {
+        display: block;
+        margin: 0px auto; /* Adjust spacing here */
+        width: 60px;
+    }
+
+    button {
+        list-style-type: none; /* Removes bullets */
+        padding: 0;
+        margin: 0px 10px 0px;
+        display: flex; /* Makes the list horizontal */
+        font-family: var(--title-font);
+        color: var(--orange);
+        justify-content: center; /* Centers the entire menu within its container */
+        align-items: center; /* Vertically centers items */
+        font-size: 24px;
+        background-color: white;
+        border: white;
+        cursor: pointer;
+    }
+
+
+    .buttoncontainer {
+        width:80px;
+        position: sticky;
+        top: 20px;
+      }
+
+      .backbutton {
+        background-color: var(--orange);
+        color: white;
+        width: 60px;
+        height: 60px;
+        border: none;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        z-index: 10;
+        justify-content: center;
+        margin:0px 10px;
+        box-shadow: var(--longshadow)
+    }
+    .backbuttoncontainer{
+        display: flex;
+        justify-content: center;  /* Horizontally centers the button */
+        align-items: center;      /* Vertically centers the button */
+        height: 10vh; 
+    }
+
+      }
