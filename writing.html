@@ -3,11 +3,12 @@ layout: default
 ---
 <div class="three-column-grid">
   <div class="sidecolumn"></div>
-<div class="posts">
+<div class="profile">
   {% for post in site.posts %}
     <article class="post">
+      <h1>Writing</h1>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
       <div class="entry">
         {{ post.excerpt }}
