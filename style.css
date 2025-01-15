@@ -47,13 +47,13 @@
 }
 
 @media screen and (max-height: 1000px) {
-    .hello {
+    .full {
         height: 100vh;
       }
 }
  
 @media screen and (min-height: 1000px) {
-    .hello {
+    .full {
         height: auto;
       }
 }
