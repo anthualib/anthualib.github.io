@@ -4,9 +4,9 @@ layout: default
 <div class="three-column-grid">
   <div class="sidecolumn"></div>
 <div class="profile">
+  <h1>Writing</h1>
   {% for post in site.posts %}
     <article class="post">
-      <h1>Writing</h1>
 
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
@@ -15,6 +15,7 @@ layout: default
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <div class="onedot"></div>
     </article>
   {% endfor %}
 </div>
