@@ -230,8 +230,10 @@ body {
     padding: 10px 20px 10px;
 }
 
-.post h2 {
-    font-size: clamp(var(--size-text-xlarge),5vw,5rem);
+.post .full h2 {
+    font-size: 57px;
+    text-align: center;
+    padding-top: calc(30vh - 71.5px);
 }
 
 .onedot{
