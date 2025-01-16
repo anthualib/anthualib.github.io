@@ -10,9 +10,8 @@ layout: default
 
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
-      <div class="postdate">
-        Posted on {{ post.date | date: "%B %e, %Y" }}
-      </div>
+      Posted on <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+      {{ post.content }}
       <div class="onedot"></div>
     </article>
   {% endfor %}
