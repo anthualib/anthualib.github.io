@@ -230,22 +230,11 @@ body {
     padding: 10px 20px 10px;
 }
 
-.post {
-    height: 70vh; /* Keeps your existing height */
-    display: flex; /* Enables Flexbox */
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    flex-direction: column; /* Stacks child elements vertically */
-}
-
-.posttitle {
+.post .full h2 {
     font-size: 57px;
-    text-align: center; /* Ensures text is horizontally centered */
+    text-align: center;
+    padding-top: calc(30vh - 71.5px);
 }
-
-.postdate {
-    font-size: 30px;
-    text-align: center; /* Ensures text is horizontally centered */
 
 .onedot{
     border: 0;

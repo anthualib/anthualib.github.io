@@ -1,20 +1,21 @@
 ---
-layout: page
+layout: default
 ---
 <div class="three-column-grid">
   <div class="sidecolumn"></div>
 <div class="post">
-  <h2 class="posttitle">{{ page.title }}</h2>
-  <div class="postdate">
-    Posted on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+<div class="full">
+  <h2>{{ page.title }}</h2>
+<div>Written on {{ page.date | date: "%B %e, %Y" }}</div>
+
 </div>
   <div class="entry">
     {{ content }}
   </div>
 
+  <div class="date">
 
+  </div>
 
   {% include disqus.html %}
-</div>
 </div>
