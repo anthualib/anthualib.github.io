@@ -415,12 +415,11 @@ nav {
 }
 
     .buttoncontainer {
-            width:180px;
             display: flex;
             text-align: center; 
             justify-content: center;
             align-items: center;
-            margin: 40px;
+            margin: 50px;
           }
 
     .float {
