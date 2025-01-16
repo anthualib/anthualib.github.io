@@ -33,8 +33,10 @@
 :root {
     --orange: #be5103;
     --black: black;
-    --grey: #636363;
-    --green: #7e846b;
+    --gunmetal: #2D3142;
+    --grey: #4F5D75;
+    --silver: #BFC0C0;
+    --white: #FFFFFF;
     --title-font: "Recoleta", sans-serif;
     --logo-font: "Lazybones", sans-serif;
     --shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
@@ -254,6 +256,7 @@ body {
 
 .postcontent {
     font-size: 32px;
+    color:#FFFFFF;
 }
 
 .onedot{
@@ -474,7 +477,7 @@ nav {
         align-items: center; /* Vertically centers items */
         font-size: 24px;
         cursor: pointer;
-        border-bottom: 2px solid var(--orange);
+        border-bottom: 2px solid var(--silver);
     }
 
   .button {
