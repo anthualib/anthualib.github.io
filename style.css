@@ -225,6 +225,14 @@ body {
 }
 
 .post {
+    height: 20vh;
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    flex-direction: column; /* Stacks child elements vertically */
+}}
+
+.post-title-container {
     height: 70vh; /* Keeps your existing height */
     display: flex; /* Enables Flexbox */
     justify-content: center; /* Centers horizontally */
