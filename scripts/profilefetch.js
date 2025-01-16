@@ -31,7 +31,7 @@ document.getElementById('loadcontacts').addEventListener('click', function(event
       .then(data => {
         const bioElement = document.getElementById('bio');
         bioElement.innerHTML = data;
-        setHelloHeightAuto(); 
+        setFullHeightAuto(); 
       })
       .catch(error => {
         console.error('There was a problem:', error);
@@ -49,7 +49,7 @@ document.getElementById('loadcontacts').addEventListener('click', function(event
       .then(data => {
         const sidebarElement = document.getElementById('sidebar');
         sidebarElement.innerHTML = data;
-        setHelloHeightAuto(); 
+        setFullHeightAuto(); 
       })
       .catch(error => {
         console.error('There was a problem:', error);
@@ -57,6 +57,6 @@ document.getElementById('loadcontacts').addEventListener('click', function(event
   }
 
   function setFullHeightAuto() {
-    const helloElement = document.querySelector('.full');
-    helloElement.style.height = 'auto'; 
+    const fullElement = document.querySelector('.full');
+    fullElement.style.height = 'auto'; 
   }
