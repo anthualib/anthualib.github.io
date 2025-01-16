@@ -225,11 +225,11 @@ body {
 }
 
 .post {
-    height: 20vh;
-    display: flex; /* Enables Flexbox */
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    flex-direction: column; /* Stacks child elements vertically */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }}
 
 .post-title-container {
@@ -428,8 +428,11 @@ nav {
         font-size: 12px;
         text-align: left;
         line-height: 1.7;
-        position: absolute;   /* Fixes this section in place */
-        width:200px;
+        position: absolute;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
     
     .jump ul {

@@ -10,11 +10,9 @@ layout: default
 
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
-      <div class="entry">
-        {{ post.excerpt }}
+      <div class="postdate">
+        Posted on {{ page.date | date: "%B %e, %Y" }}
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
       <div class="onedot"></div>
     </article>
   {% endfor %}
