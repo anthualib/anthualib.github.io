@@ -250,6 +250,10 @@ body {
     text-align: center; /* Ensures text is horizontally centered */
 }
 
+.postcontent {
+    font-size: 32px;
+}
+
 .onedot{
     border: 0;
     border-top: 10px dotted lightgrey; /* Dotted line */
