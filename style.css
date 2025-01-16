@@ -206,6 +206,12 @@ a {
     border-bottom: 2px solid transparent;
 }
 
+footer p a {
+    color: white;
+    text-decoration: underline; /* Example: underline links */
+}
+
+
 a:hover {
     color: var(--orange);
     text-decoration: none;
@@ -777,9 +783,7 @@ footer {
         width: 144px;
     }
 
-    footer a {
-        color:white;
-    }
+
 
 /*Navigation bar*/
     nav {
