@@ -6,13 +6,15 @@ layout: default
 <div class="post">
 <div class="full">
   <h2>{{ page.title }}</h2>
+<div>Written on {{ page.date | date: "%B %e, %Y" }}</div>
+
 </div>
   <div class="entry">
     {{ content }}
   </div>
 
   <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+
   </div>
 
   {% include disqus.html %}
