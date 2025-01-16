@@ -1,27 +1,54 @@
----
-layout: default
----
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anthony Hua</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+<div class="hello">
+    <header>
+        <nav id="top">
+            <div class="navleft">
+            </div>
+        <div id="headercontainer">
+        </div>
+     </header>
+     
 <div class="three-column-grid">
-  <div class="sidecolumn"></div>
-  <div class="profile">
-      <h1 class="logo"><a href="/index.html">Anthony Hua</a></h1>
-      <img class="profilepic" src="images/profile.jpeg">
-      <p class="bio">Hiya! My name is Anthony Hua! I am a full-time library employee at UW-Madison’s Memorial Library, with a love of public services and student supervising. I am also pursuing a Master’s in Library and Information Science, where I am currently exploring my interests in research support and data analysis.</p>
-      <ul class="navmenu2">
-          <li><div class="buttoncontainer"><button id="loadabout">About Me</button></div></li>
-          <p>/</p>
-          <li><div class="buttoncontainer"><button id="loadroles">My Works</button></div></li>
-          <p>/</p>
-          <li><div class="buttoncontainer"><button id="loadcareer">Contact Me</button></div></li>
-      </ul>
-      <button id="loadcontacts" style="display:none;">Load Contacts</button>
-  </div>
-  </div>
+    <div class="sidecolumn"></div>
+    <div class="profile">
+        <h1 class="logo"><a href="/index.html">Anthony Hua</a></h1>
+        <img class="profilepic" src="images/profile.jpeg">
+        <p class="bio">Hiya! My name is Anthony Hua! I am a full-time library employee at UW-Madison’s Memorial Library, with a love of public services and student supervising. I am also pursuing a Master’s in Library and Information Science, where I am currently exploring my interests in research support and data analysis.</p>
+        <ul class="navmenu2">
+            <li><div class="buttoncontainer"><button id="loadabout">About Me</button></div></li>
+            <p>/</p>
+            <li><div class="buttoncontainer"><button id="loadroles">My Works</button></div></li>
+            <p>/</p>
+            <li><div class="buttoncontainer"><button id="loadcareer">Contact Me</button></div></li>
+        </ul>
+        <button id="loadcontacts" style="display:none;">Load Contacts</button>
+    </div>
+    </div>
+    </div>
 
 
-      <!-- Fetch content loaded here-->
+        <!-- Fetch content loaded here-->
 
-      <div id="bio"></div>
-      <!-- Fetch content loaded here-->
-      
+        <div id="bio"></div>
+        <!-- Fetch content loaded here-->
+        
+
+     
+
+<footer>
+    <div id="footercontainer"></div>
+</footer>
+</body>
+<script src="/scripts/profilefetch.js"></script>
+<script src="/scripts/headerfetch.js"></script>
+</html>
