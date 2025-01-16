@@ -420,6 +420,7 @@ nav {
             text-align: center; 
             justify-content: center;
             align-items: center;
+            margin: 40px;
           }
 
     .float {
@@ -477,7 +478,7 @@ nav {
         align-items: center; /* Vertically centers items */
         font-size: 24px;
         cursor: pointer;
-        border-bottom: 2px solid var(--grey);
+        border-bottom: 2px solid var(--orange);
     }
 
   .button {
