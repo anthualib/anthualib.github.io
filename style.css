@@ -238,6 +238,8 @@ body {
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
     flex-direction: column; /* Stacks child elements vertically */
+    border-bottom: 4px solid var(--orange);
+
 }
 
 .posttitle {

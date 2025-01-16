@@ -1,16 +1,16 @@
 ---
 layout: default
 ---
+<div class="post-title-container">
+  <h2 class="posttitle">{{ page.title }}</h2>
+  <div class="postdate">
+    Posted on {{ page.date | date: "%B %e, %Y" }}
+  </div>
+</div>
+
 <div class="three-column-grid">
   <div class="sidecolumn"></div>
 <div>
-    <div class="post-title-container">
-    <h2 class="posttitle">{{ page.title }}</h2>
-    <div class="postdate">
-      Posted on {{ page.date | date: "%B %e, %Y" }}
-    </div>
-  </div>
-
     <div class="postcontent">
       {{ content }}
     </div>
