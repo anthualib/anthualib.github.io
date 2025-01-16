@@ -256,7 +256,7 @@ body {
 
 .postcontent {
     font-size: 32px;
-    color:#FFFFFF;
+    color: black;
 }
 
 .onedot{
@@ -477,7 +477,7 @@ nav {
         align-items: center; /* Vertically centers items */
         font-size: 24px;
         cursor: pointer;
-        border-bottom: 2px solid var(--silver);
+        border-bottom: 2px solid var(--grey);
     }
 
   .button {
