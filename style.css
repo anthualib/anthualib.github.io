@@ -46,17 +46,7 @@
     padding:0px;
 }
 
-@media screen and (max-height: 1000px) {
-    .full {
-        height: 100vh;
-      }
-}
  
-@media screen and (min-height: 1000px) {
-    .full {
-        height: auto;
-      }
-}
 
 @media screen and (min-width: 780px) {
 
@@ -88,6 +78,10 @@
     
       main p {
         margin: 10px 0px 10px;
+      }
+
+      .full {
+        height: 100vh;
       }
 
 

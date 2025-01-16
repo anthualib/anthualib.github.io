@@ -56,7 +56,7 @@ document.getElementById('loadcontacts').addEventListener('click', function(event
       });
   }
 
-  function setHelloHeightAuto() {
-    const helloElement = document.querySelector('.hello');
+  function setFullHeightAuto() {
+    const helloElement = document.querySelector('.full');
     helloElement.style.height = 'auto'; 
   }
