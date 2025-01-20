@@ -62,11 +62,12 @@
 
     /*page formatting*/
     main {
-        text-align: center;
-        font-size: 18px;
+        text-align: left;
+        font-size: 25px;
         margin: 0px auto;
         width: 900px;
       }
+
 
       .profile {
         text-align: center;
@@ -131,6 +132,7 @@ h1 {
     font-size: 65px;
     text-shadow: var(--shadow);
     margin: 10px 20px 10px; /*top, sides, bottom*/
+    text-align: center;
 }
 
 h2 {
@@ -138,6 +140,7 @@ h2 {
     font-family: var(--title-font);
     font-size: 30px;
     margin: 10px 0px 10px;
+    text-align: center;
 }
 
 h3 {
@@ -145,6 +148,7 @@ h3 {
     font-family: var(--title-font);
     font-size: 22px;
     margin: 10px 0px 0px;
+    text-align: center;
     
 }
 
@@ -153,6 +157,7 @@ h4 {
     color: var(--black);
     margin: 10px 0px 0px;
     font-size: 18x;
+    text-align: center;
 }
 
 .centered-list {
