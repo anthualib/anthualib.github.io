@@ -63,28 +63,47 @@
     /*page formatting*/
     main {
         text-align: left;
-        font-size: 25px;
+        font-size: 20px;
         margin: 0px auto;
         width: 900px;
       }
 
+    .center {
+        text-align: center;
+        margin: 0px;
+    }
+
+    .centerflex {
+        display: flex;
+        flex-direction: column;  /* Stack items vertically */
+        justify-content: center; /* Vertical centering */
+        align-items: center;     /* Horizontal centering */
+    }
 
       .profile {
         text-align: center;
         font-size: 18px;
-        margin: 0px auto;
+        margin: 15px auto;
         width: 900px;
-        margin-top: 50px;
       }
 
 
     
       main p {
-        margin: 10px 0px 10px;
+        padding: 0px 25px 0px;
+        margin: 10px;
       }
 
       .full {
         height: 100vh;
+      }
+      .cover {
+        display: flex;
+        justify-content: center; /* Horizontal centering (optional) */
+        align-items: center;     /* Vertical centering */
+        height: 100vh;           /* Set container height */
+        border: 1px solid #ccc;  /* Optional for visibility */
+        flex-direction: column;
       }
 
 
@@ -106,7 +125,7 @@
     width: 100%; /* Ensures full screen width */
     align-items: center;
     justify-content: center;
-    margin: 0% auto 3%;
+    margin: 0px auto 0px;
     gap:12px;
 }
 
@@ -127,6 +146,14 @@
 
 /*text formatting*/
 h1 {
+    color: var(--black);
+    font-family: var(--title-font);
+    font-size: 40px;
+    margin: 10px 0px 10px;
+    text-align: center;
+}
+
+.logo {
     color: var(--orange);
     font-family: var(--logo-font);
     font-size: 65px;
@@ -149,7 +176,6 @@ h3 {
     font-size: 22px;
     margin: 10px 0px 0px;
     text-align: center;
-    
 }
 
 h4 {
@@ -173,6 +199,21 @@ h4 {
   
   ul li {
     list-style-position: inside; /* Ensures the bullets stay aligned with text */
+  }
+
+  .horizontal-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none; /* Remove bullet points */
+    padding: 0;       /* Remove default padding */
+    margin: 0;        /* Remove default margin */
+    gap: 10px;        /* Optional: space between items */
+    width: 70%;
+    justify-content: center;
+  }
+  
+  .horizontal-list li {
+    /* Optional styling for list items */
   }
 
 .logo a {
@@ -234,7 +275,8 @@ body {
 
 .bio{
     font-size: 24px;
-    padding: 10px 20px 10px;
+    padding: 20px 20px 0px;
+    margin: 0px;
 }
 
 .post {
@@ -273,14 +315,14 @@ body {
 .onedot{
     border: 0;
     border-top: 10px dotted lightgrey; /* Dotted line */
-    margin: 40px auto 30px;   
+    margin: 50px auto 50px;   
     width: 20px;
 }
 
 .threedots{
     border: 0;
     border-top: 10px dotted lightgrey; /* Dotted line */
-    margin: 20px auto 30px;   
+    margin: 50px auto 50px;  
     width: 70px;            
 }
 
@@ -298,10 +340,12 @@ a img {
 }
 
 img {
+    display: block;
     border-radius: 30px;
     box-shadow: var(--longshadow);
-    width: 60%;
-    margin: 0 auto
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer img {
@@ -380,6 +424,9 @@ nav {
     font-size: 24px;
     text-align: center;
     }
+.navmenu2 p{
+margin: 0px;
+}
 
 /*Dropdown Menu*/
 .navmenu {
@@ -435,7 +482,7 @@ nav {
             text-align: center; 
             justify-content: center;
             align-items: center;
-            margin: 50px;
+            margin: 30px 50px 5px;
           }
 
     .float {
@@ -630,14 +677,31 @@ nav {
     margin: 10px 0px 10px;
 }
 
+.borderbox p {
+ padding: 0px 5px 0px;
+}
+
 .borderboxgreen {
-    border-color: var(--green);
+    border-color: var(--gunmetal);
     border-radius: 33px;
     border-width: 2px;
     border-style: solid;
     padding: 10px 10px 10px;
     box-shadow: var(--longshadow);
-    margin: 10px 0px 10px;
+    margin: 0px 0px 0px;
+}
+
+.borderboxgreen p {
+    padding: 0px 5px 0px;
+   }
+
+   .subjectbox {
+    border-color: #be5103;
+    border-radius: 33px;
+    border-width: 3px;
+    border-style: solid;
+    padding: 10px 10px 10px;
+    margin: 0px;
 }
 
 /*Blog stuff*/
@@ -651,7 +715,7 @@ nav {
 
 footer {
     margin: 0 auto; /* Center the footer horizontally */
-    padding: 0 100px; /* Padding from left and right */
+    padding: 0 10px; /* Padding from left and right */
     text-align: center; 
     justify-content: center; 
     display: flex; 
@@ -686,6 +750,12 @@ footer {
         margin: 2% auto;
         width: 95%;
         max-width: 480px;
+    }
+
+
+
+    img {
+        text-align: center;
     }
     
     main p {
@@ -774,6 +844,10 @@ footer {
     img {
         border-radius: 30px;
         box-shadow: var(--longshadow);
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+
     }
     
     .socials img {
