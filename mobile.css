@@ -1,0 +1,370 @@
+@media screen and (max-width: 780px) {
+
+    /* Layout*/
+    .three-column-grid {
+    }
+
+    .sidecolumn {
+        display: none;
+    }
+    /*Navigation*/
+header {
+    display: flex;
+    justify-content: center;
+}
+
+    .navmenu {
+        display: disc;
+    }
+
+    .navleft {
+        display: none;
+    }
+
+
+    main {
+        padding: 0%;
+        text-align: center;
+        font-size: 18px;
+        margin: 2% auto;
+        width: 95%;
+        max-width: 480px;
+    }
+
+
+
+    img {
+        text-align: center;
+    }
+    
+    main p {
+        padding: 0px 0px 1px;
+    }
+
+    h1 {
+        color: var(--orange);
+        font-family: var(--logo-font);
+        font-size: 65px;
+        text-shadow: var(--shadow);
+        margin: 10px 20px 10px; /*top, sides, bottom*/
+        text-align: center;
+    }
+    
+    h2 {
+        color: var(--black);
+        font-family: var(--title-font);
+    }
+    
+    h3 {
+        color: var(--black);
+        font-family: var(--title-font);
+        margin: 1-px 0px 0px;
+    }
+    
+    h4 {
+        font-family: var(--title-font);
+        color: var(--black);
+        margin: 10px 0px 0px;
+    }
+    
+    .logo a {
+        text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+        display: inline-block; /* Ensure the link is treated as a block for transform */
+        transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+        border-bottom: none;
+    }
+    
+    .logo a:hover {
+        text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);;
+        transform: translate(2px, 2px); /* Moves the link 2px right and 2px down */
+        transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+    }
+    
+    .logomini a {
+        text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.2);
+        display: inline-block; /* Ensure the link is treated as a block for transform */
+        transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+        border-bottom: none;
+    }
+    
+    .logomini a:hover {
+        text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);;
+        transform: translate(1.5px, 1.5px); /* Moves the link 2px right and 2px down */
+        transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+    }
+    
+    
+    a {
+        color: var(--orange);
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom-color 0.3s ease, border-bottom-width 0.3s ease;
+    }
+    
+    a:hover {
+        color: var(--orange);
+        text-decoration: none;
+        text-shadow: none;
+        border-bottom-color: var(--orange);
+        transition: border-bottom-color 0.3s ease, border-bottom-width 0.3s ease;
+    }
+    
+    body {
+        font-family: "Aptos";
+        color:var(--grey);
+    }
+    
+    .bio{
+        font-size: 23px;
+        padding: 10px 20px 10px;
+    }
+    
+    /*Images*/
+    
+    img {
+        border-radius: 30px;
+        box-shadow: var(--longshadow);
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+
+    }
+    
+    .socials img {
+        border-radius: 0px;
+        width: 30px;
+        box-shadow: none;
+    }
+    
+    .profilepic {
+        border-radius: 100px;
+        box-shadow: var(--longshadow);
+        width: 144px;
+    }
+
+
+
+/*Navigation bar*/
+    nav {
+        display: grid;
+        width: 100%; /* Ensure full width of the container */
+        margin: 0px auto;
+        gap: 10px;
+      }
+    
+    .navright {
+        padding: 5px 20px 5px;
+      }
+    
+    .navmenu{
+        list-style-type: none; /* Removes bullets */
+        padding: 0;
+        margin: 0;
+        display: flex; /* Makes the list horizontal */
+        gap: 30px; /* Adds spacing between items */
+        font-family: var(--title-font);
+        justify-content: center; /* Centers the entire menu within its container */
+        align-items: center; /* Vertically centers items */
+        font-size: 5vw;
+      }
+    
+      .navmenu2{
+        list-style-type: none; /* Removes bullets */
+        padding: 0;
+        margin: 0px 10px 0px;
+        display: flex; /* Makes the list horizontal */
+        font-family: var(--title-font);
+        justify-content: center; /* Centers the entire menu within its container */
+        align-items: center; /* Vertically centers items */
+        font-size: 24px;
+        }
+        .navmenu2 li{
+            width:170px;
+        }
+        
+      .navmenu2 p{
+        display:none;
+      }
+
+
+
+
+      img {
+        border-radius: 30px;
+        box-shadow: var(--longshadow);
+        width: 90%;
+    }
+
+    .button {
+        display: inline-block;
+        color: white;
+        background-color: var(--orange);
+        border: none;
+        padding: 5px 10px; /* Padding for the button */
+        border-color: #be5103;
+        border-radius:5px;
+        border-width: 3px;
+        border-style: solid;
+        box-shadow: var(--longshadow);
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+    
+        }
+    
+    
+    .button:hover {
+        display: inline-block;
+        color: white;
+        background-color: var(--orange);
+        border: none;
+        padding: 5px 10px; /* Padding for the button */
+        border-color: #be5103;
+        border-radius:5px;
+        border-width: 3px;
+        border-style: solid;
+        transform: translate(4px, 4px);
+        box-shadow: var(--shadow);
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+    
+
+
+    .sticky {
+        position: sticky;
+        z-index: 10;
+        top: 40px;
+        margin:0px 10px;
+        }
+    
+    .socials img {
+        border-radius: 0px;
+        width: 30px;
+        box-shadow: none;
+    }
+
+    .sociallist{
+        list-style-type: none; /* Removes bullets */
+        padding: 0;
+        margin: 40px 0px 20px;
+        display: flex; /* Makes the list horizontal */
+        gap: 80px; /* Adds spacing between items */
+        justify-content: center; /* Centers the entire menu within its container */
+        align-items: center; /* Vertically centers items */
+    }
+    
+    .sociallist img {
+        width: 50px;
+    }
+
+    .mobileexclude {
+        display: none;
+    }
+
+    .mobileinclude {
+        display: flex; /* Enables flexbox for alignment */
+        justify-content: center; /* Centers content horizontally */
+        align-items: center; /* Centers content vertically */
+    }
+
+    .borderbox {
+        border-color: #be5103;
+        border-radius: 33px;
+        border-width: 2px;
+        border-style: solid;
+        padding: 0px 20px 0px;
+        box-shadow: var(--longshadow);
+        margin: 10px 0px 0px;
+    }
+    
+    .borderboxgreen {
+        border-color: var(--green);
+        border-radius: 33px;
+        border-width: 2px;
+        border-style: solid;
+        padding: 10px 10px 10px;
+        box-shadow: var(--longshadow);
+        margin: 10px 0px 10px;
+    }
+
+    footer {
+        margin: 0px auto;
+        padding: 0px 10px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        font-size:12px
+    }
+
+    .onedot{
+        border: 0;
+        border-top: 10px dotted lightgrey; /* Dotted line */
+        margin: 40px auto 30px;   
+        width: 10px;
+    }
+    
+    .threedots{
+        border: 0;
+        border-top: 10px dotted lightgrey; /* Dotted line */
+        margin: 50px auto 30px;   
+        width: 50px;
+    }
+
+    .profile-link {
+        font-size: 18px;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        margin: 20px auto;
+    }
+    
+    .profile-link img {
+        display: block;
+        margin: 0px auto; /* Adjust spacing here */
+        width: 60px;
+    }
+
+    button {
+        list-style-type: none; /* Removes bullets */
+        padding: 0;
+        margin: 0px 10px 0px;
+        display: flex; /* Makes the list horizontal */
+        font-family: var(--title-font);
+        color: var(--orange);
+        justify-content: center; /* Centers the entire menu within its container */
+        align-items: center; /* Vertically centers items */
+        font-size: 24px;
+        background-color: white;
+        border: white;
+        cursor: pointer;
+    }
+
+
+    .buttoncontainer {
+        width:80px;
+        position: sticky;
+        top: 20px;
+      }
+
+      .backbutton {
+        background-color: var(--orange);
+        color: white;
+        width: 60px;
+        height: 60px;
+        border: none;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        z-index: 10;
+        justify-content: center;
+        margin:0px 10px;
+        box-shadow: var(--longshadow)
+    }
+    .backbuttoncontainer{
+        display: flex;
+        justify-content: center;  /* Horizontally centers the button */
+        align-items: center;      /* Vertically centers the button */
+        height: 10vh; 
+    }
+
+      }

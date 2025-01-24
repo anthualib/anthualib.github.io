@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<title>About Anthony</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="tablet.css">
+<link rel="stylesheet" href="mobile.css">
+</head>
+  
+<body>
+    <header>
+        <nav id="top"> <!-- Anchor for the top of the page. Only pages with contents can take advantage of this-->
+            <div class="navleft"> <!-- Placeholder container. Can be used if I'm using the left side  -->
+            </div>
+        <div id="headercontainer"> <!-- Fetch javascript for header, pulls /assets/header.html dynamically  -->
+        </div>
+     </header>
+
+  <main>
+
+    <h1>Minigame</h1>
+
+<div style="border: 2px solid #C45607; padding: 20px; margin: 10px; border-radius: 30px;background-color:#EAEAEA">
+<h2 class>Dinnertime!</h2>
+<p>You come home, hungry after a long day. You open the fridge. It is completely empty, except a lone, but appetizing jar of pickles. The lid looks especially stuck on there...
+
+What do you do?</p>
+
+    <div id="reward" class="center"></div>
+  
+<div class="vs">
+    <div class="box"><h4 id="HeroName"></h4>
+<p>Health: <span id="HeroHealth"></span> HP</p>
+<p>Strength: <span id="HeroStrength"></span></p>
+<p>Defense: <span id="HeroDefense"></span></p></div>
+    <div class="box"><h4 id="PickleName"></h4>
+<p>Health: <span id="PickleHealth"></span> HP</p>
+<p>Strength: <span id="PickleStrength"></span></p>
+<p>Defense: <span id="PickleDefense"></span></p></div>
+</div>
+
+<div class="gamebuttons">
+<button id="fight">Open the jar</button>
+<button id="dryhands">Dry your hand</button>
+<button id="giveup">Give up</button>
+</div>
+
+</body>
+<script src="/scripts/profilefetch.js"></script>
+<script src="/scripts/headerfetch.js"></script>
+<script src="scripts/Minigame.js" defer></script>
+</html>
