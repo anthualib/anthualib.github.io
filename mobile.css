@@ -9,12 +9,17 @@
     }
     /*Navigation*/
 header {
-    display: flex;
-    justify-content: center;
+margin: 0  auto;
+}
+
+nav {
+    display: ;
 }
 
     .navmenu {
-        display: disc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .navleft {
