@@ -6,47 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Anthony Hua</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-<div class="full">
+<div class="full"> <!-- Everything wrapped in "full" will fill the screen height-->
     <header>
-        <nav id="top">
-            <div class="navleft">
+        <nav id="top"> <!-- Anchor for the top of the page. Only pages with contents can take advantage of this-->
+            <div class="navleft"> <!-- Placeholder container. Can be used if I'm using the left side  -->
             </div>
-        <div id="headercontainer">
+        <div id="headercontainer"> <!-- Fetch javascript for header, pulls /assets/header.html dynamically  -->
         </div>
      </header>
-     
-<div class="three-column-grid">
-    <div class="sidecolumn"></div>
-    <div class="profile centerflex">
+<div class="three-column-grid"> <!-- 5-column Layout  -->
+    <div class="sidecolumn"></div>  <!-- Column 1 is where table of contents will be loaded in, for some pages  -->
+    <div class="profile centerflex"> <!-- Columns 2-4 is where main contents will be loaded in  -->
         <h1 class="logo"><a href="/index.html">Anthony Hua</a></h1>
         <img class="profilepic" src="images/profile.jpeg">
         <p class="bio">Hiya! My name is Anthony Hua! I am a full-time library employee at UW-Madison’s Memorial Library, with a love of public services and student supervising. I am also pursuing a Master’s in Library and Information Science, where I am currently exploring my interests in research support and data analysis.</p>
-        <ul class="navmenu2">
-            <li><div class="buttoncontainer"><button id="loadabout">About Me</button></div></li>
+        <ul class="navmenu2"> <!-- Links for the javascript triggering fetch content -->
+            <li><div class="buttoncontainer"><button id="loadabout">About Me</button></div></li> <!-- Fetch javascript for footer, pulls /assets/about.html dynamically  -->
             <p>/</p>
-            <li><div class="buttoncontainer"><button id="loadroles">My Work</button></div></li>
+            <li><div class="buttoncontainer"><button id="loadroles">My Work</button></div></li> <!-- Fetch javascript for footer, pulls /assets/roles.html dynamically  -->
             <p>/</p>
-            <li><div class="buttoncontainer"><button id="loadcareer">Contact Me</button></div></li>
+            <li><div class="buttoncontainer"><button id="loadcareer">Contact Me</button></div></li> <!-- Fetch javascript for footer, pulls /assets/career.html dynamically  -->
         </ul>
         <button id="loadcontacts" style="display:none;">Load Contacts</button>
     </div>
     </div>
     </div>
-
-
-        <!-- Fetch content loaded here-->
-
-        <div id="bio"></div>
-        <!-- Fetch content loaded here-->
-        
-
-     
-
+        <div id="bio"></div> <!-- Fetch content loaded here-->
 <footer>
-    <div id="footercontainer"></div>
+    <div id="footercontainer"></div>  <!-- Fetch javascript for footer, pulls /assets/footer.html dynamically  -->
 </footer>
 </body>
 <script src="/scripts/profilefetch.js"></script>

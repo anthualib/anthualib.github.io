@@ -125,7 +125,7 @@
     width: 100%; /* Ensures full screen width */
     align-items: center;
     justify-content: center;
-    margin: 0px auto 0px;
+    margin: 20px auto 20px;
     gap:12px;
 }
 
@@ -187,18 +187,19 @@ h4 {
 }
 
 .centered-list {
-    text-align: center; /* Centers the list as a block */
+    text-align:left; /* Centers the list as a block */
   }
   
   ul {
     display: inline-block; /* Allows the list to shrink-wrap around its items */
     text-align: left; /* Aligns the text and bullets to the left inside the block */
-    padding: 0; /* Removes extra padding around the list */
+    padding: 20px 0 0; /* Removes extra padding around the list */
     margin: 0; /* Removes default margin */
   }
   
   ul li {
-    list-style-position: inside; /* Ensures the bullets stay aligned with text */
+    list-style-position: outside; /* Ensures the bullets stay aligned with text */
+    padding: 0 0 5px;
   }
 
   .horizontal-list {
@@ -416,6 +417,7 @@ nav {
     list-style-type: none; /* Removes bullets */
     padding: 0;
     margin: 0;
+    height: 100px;
     display: flex; /* Makes the list horizontal */
     gap: 30px; /* Adds spacing between items */
     font-family: var(--title-font);
@@ -425,7 +427,8 @@ nav {
     text-align: center;
     }
 .navmenu2 p{
-margin: 0px;
+    text-align: center;
+    height:8px;
 }
 
 /*Dropdown Menu*/
