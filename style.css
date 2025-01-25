@@ -309,9 +309,45 @@ body {
 }
 
 .postcontent {
-    font-size: 32px;
+    font-size: 22px;
     color: black;
 }
+/*Tables*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  th, td {
+    border: 1px solid black; /* Black border */
+    padding: 10px 15px;
+  }
+
+  thead th {
+    background-color: black; /* Black header background */
+    color: white; /* White text for header */
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #d3d3d3; /* Light grey for odd rows */
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #a9a9a9; /* Darker grey for even rows */
+  }
+
+  tbody tr:hover {
+    background-color: #cccccc; /* Highlight row on hover */
+  }
+
+  th {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
 .onedot{
     border: 0;
