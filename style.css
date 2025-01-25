@@ -316,6 +316,35 @@ body {
     max-width: 100vw;
   margin: 100px auto;
 }
+
+.postcontent h2 {
+  font-size: 40px;
+  margin: 80px 10px 0px;
+}
+
+.postcontent h3 {
+  font-size: 34px;
+  margin: 60px 10px 0px;
+}
+
+.postcontent h4 {
+  font-size: 28px;
+   margin: 50px 10px 0px;
+}
+
+.postcontent ul {
+  margin: 0px;
+  padding: 10px 50px
+}
+
+.highlight {
+  background-color: var(--gunmetal);
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
 /*Tables*/
 
 table {
