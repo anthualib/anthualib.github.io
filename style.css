@@ -1,8 +1,29 @@
-/*Fonts stuff*/
-@font-face {
+/* ==========================================================================
+   Table of Contents:
+   1. Font Declarations
+   2. CSS Variables
+   3. Base Styles
+   4. Typography
+   5. Layout & Grid
+   6. Navigation
+   7. Components
+      - Buttons
+      - Cards & Boxes
+      - Tables
+      - Images
+   8. Blog Specific
+   9. Game Elements
+   10. Footer
+   11. Media Queries
+   ========================================================================== */
+
+/* 1. Font Declarations
+   ========================================================================== */
+   @font-face {
     font-family: "Recoleta";
     src: url(/fonts/Recoleta-Black.ttf);
 }
+
 @font-face {
     font-family: "Lazybones";
     src: url(/fonts/Lazybones.ttf);
@@ -11,25 +32,26 @@
 @font-face {
     font-family: "Aptos";
     src: url("/fonts/Aptos-Display.ttf");
-    font-weight: 400; /* Regular weight */
-    font-style: normal; /* Normal style */
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "Aptos";
     src: url("/fonts/Aptos-Display-Bold.ttf");
-    font-weight: 600; /* Bold weight */
+    font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Aptos";
     src: url("/fonts/Aptos-Display-Italics.ttf");
-    font-weight: 400; /* Bold weight */
-    font-style: normal; /* bold style */
+    font-weight: 400;
+    font-style: italic;
 }
 
-/*variables*/
+/* 2. CSS Variables
+   ========================================================================== */
 :root {
     --orange: #be5103;
     --black: black;
@@ -43,122 +65,57 @@
     --longshadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
-#bio {
-    margin:0px;
-    padding:0px;
+/* 3. Base Styles
+   ========================================================================== */
+body {
+    font-family: "Aptos";
+    color: var(--gunmetal);
+    margin: 0;
 }
 
- 
-
-@media screen and (min-width: 780px) {
-
-    .mobileinclude {
-    display:none;
-    }
-
-    .mobileexclude {
-        display: block;
-    }
-
-    /*page formatting*/
-    main {
-        text-align: left;
-        font-size: 20px;
-        margin: 0px auto;
-        width: 900px;
-      }
-
-    .center {
-        text-align: center;
-        margin: 0px;
-    }
-
-    .centerflex {
-        display: flex;
-        flex-direction: column;  /* Stack items vertically */
-        justify-content: center; /* Vertical centering */
-        align-items: center;     /* Horizontal centering */
-    }
-
-      .profile {
-        text-align: center;
-        font-size: 18px;
-        margin: 15px auto;
-        width: 900px;
-      }
-
-
-    
-      main p {
-        padding: 0px 25px 0px;
-        margin: 10px;
-      }
-
-      .full {
-        height: 100vh;
-      }
-      .cover {
-        display: flex;
-        justify-content: center; /* Horizontal centering (optional) */
-        align-items: center;     /* Vertical centering */
-        height: 100vh;           /* Set container height */
-        border: 1px solid #ccc;  /* Optional for visibility */
-        flex-direction: column;
-      }
-
-
-.three-column-grid {
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr; /* Left: 1 unit, Middle: 5 units, Right: 1 unit */
-    gap: 10px; /* Space between columns */
-  }
-  
-  .sidecolumn {
-    padding: 10px 30px;
-    text-align: center;
-    position: relative; /* Makes the container the reference point for absolute positioning */
-    overflow: visible;
+main {
+    text-align: left;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 900px;
 }
 
-.columns {
-    display: flex;
-    width: 100%; /* Ensures full screen width */
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto 20px;
-    gap:12px;
-}
-
-.columns p {
-    padding: 0px 25px 0px
-}
-
-/* First column - 33% */
-.column-33 {
-    flex: 0 0 33%; /* Flex-grow: 0, Flex-shrink: 0, Width: 33% */
-}
-
-/* Second column - 66% */
-.column-66 {
-    flex: 0 0 66%; /* Flex-grow: 0, Flex-shrink: 0, Width: 66% */
-}
-
-
-/*text formatting*/
-h1 {
-    color: var(--black);
-    font-family: var(--title-font);
-    font-size: 40px;
-    margin: 10px 0px 10px;
-    text-align: center;
-}
-
+/* 4. Typography & Logos
+   ========================================================================== */
+/* Main logo styling - Used on homepage */
 .logo {
     color: var(--orange);
     font-family: var(--logo-font);
     font-size: 65px;
     text-shadow: var(--shadow);
-    margin: 10px 20px 10px; /*top, sides, bottom*/
+    margin: 10px 20px;
+    text-align: center;
+}
+
+/* Compact logo styling - Used on all other pages */
+.logomini {
+    font-size: 45px;
+}
+
+/* Logo link interactions */
+.logo a, .logomini a {
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    border-bottom: none;
+}
+
+.logo a:hover, .logomini a:hover {
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    transform: translate(2px, 2px);
+}
+
+/* Regular typography */
+h1 {
+    color: var(--black);
+    font-family: var(--title-font);
+    font-size: 40px;
+    margin: 10px 0;
     text-align: center;
 }
 
@@ -166,7 +123,7 @@ h2 {
     color: var(--black);
     font-family: var(--title-font);
     font-size: 30px;
-    margin: 10px 0px 10px;
+    margin: 10px 0;
     text-align: center;
 }
 
@@ -174,82 +131,16 @@ h3 {
     color: var(--black);
     font-family: var(--title-font);
     font-size: 22px;
-    margin: 10px 0px 0px;
+    margin: 10px 0 0;
     text-align: center;
 }
 
 h4 {
     font-family: var(--title-font);
     color: var(--black);
-    margin: 10px 0px 0px;
-    font-size: 18x;
+    margin: 10px 0 0;
+    font-size: 18px;
     text-align: center;
-}
-
-ul {
-    margin: 0px;
-    padding: 10px 50px;
-  }
-
-.centered-list {
-    text-align:left; /* Centers the list as a block */
-  }
-  
-  ul {
-    display: inline-block; /* Allows the list to shrink-wrap around its items */
-    text-align: left; /* Aligns the text and bullets to the left inside the block */
-    padding: 20px 0 0; /* Removes extra padding around the list */
-    margin: 0; /* Removes default margin */
-  }
-  
-  ul li {
-    list-style-position: outside; /* Ensures the bullets stay aligned with text */
-    padding: 0 0 5px;
-  }
-
-  .horizontal-list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none; /* Remove bullet points */
-    padding: 0;       /* Remove default padding */
-    margin: 0;        /* Remove default margin */
-    gap: 10px;        /* Optional: space between items */
-    width: 70%;
-    justify-content: center;
-  }
-  
-  .horizontal-list li {
-    /* Optional styling for list items */
-  }
-
-.logo a {
-    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
-    display: inline-block; /* Ensure the link is treated as a block for transform */
-    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
-    border-bottom: none;
-}
-
-.logo a:hover {
-    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);;
-    transform: translate(2px, 2px); /* Moves the link 2px right and 2px down */
-    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
-}
-
-.logomini {
-    font-size: 45px;
-}
-
-.logomini a {
-    text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.2);
-    display: inline-block; /* Ensure the link is treated as a block for transform */
-    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
-    border-bottom: none;
-}
-
-.logomini a:hover {
-    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);;
-    transform: translate(1.5px, 1.5px); /* Moves the link 2px right and 2px down */
-    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
 }
 
 a {
@@ -258,179 +149,135 @@ a {
     border-bottom: 2px solid transparent;
 }
 
-footer p a {
-    color: white;
-    text-decoration: underline; /* Example: underline links */
-}
-
-
 a:hover {
     color: var(--orange);
-    text-decoration: none;
     border-bottom-color: var(--orange);
 }
 
-body {
-    font-family: "Aptos";
-    color:var(--gunmetal);
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
+/* 5. Layout & Grid
+   ========================================================================== */
+.three-column-grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    gap: 10px;
 }
 
-.bio{
-    font-size: 24px;
-    padding: 20px 20px 0px;
-    margin: 0px;
-}
-
-.post {
-    height: auto;
+.columns {
     display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 12px;
+}
+
+.column-33 {
+    flex: 0 0 33%;
+}
+
+.column-66 {
+    flex: 0 0 66%;
+}
+
+/* 6. Navigation
+   ========================================================================== */
+/* Main Navigation Container */
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 10px;
+    padding-top: 8px;
+}
+
+/* Primary Navigation Menu (Profile, Writing, Recipes, Games) */
+.navmenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 50px;
+    font-family: var(--title-font);
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}}
-
-.post-title-container {
-    height: 70vh; /* Keeps your existing height */
-    min-height: 300px;
-    display: flex; /* Enables Flexbox */
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    flex-direction: column; /* Stacks child elements vertically */
-    border-bottom: 4px solid var(--gunmetal);
-
+    font-size: 26px;
 }
 
-.posttitle {
-    font-size: 57px;
-    text-align: center; /* Ensures text is horizontally centered */
-}
-
-.postdate {
-    font-size: 30px;
-    text-align: center; /* Ensures text is horizontally centered */
-}
-
-.postcontent {
-    font-size: 22px;
-    color: black;
-    width: 1000px;
-    max-width: 100vw;
-  margin: 100px auto;
-}
-
-.postcontent h2 {
-  font-size: 40px;
-  margin: 80px 10px 0px;
-}
-
-.postcontent h3 {
-  font-size: 34px;
-  margin: 60px 10px 0px;
-}
-
-.postcontent h4 {
-  font-size: 28px;
-   margin: 50px 10px 0px;
-}
-
-.postcontent ul {
-  margin: 0px;
-  padding: 10px 50px;
-}
-
-.highlight {
-  background-color: var(--gunmetal);
-  color: white;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 10px;
-}
-
-/*Tables*/
-
-table {
-    width: 100%;
-    border-collapse: seperate;
-    margin: 20px 0;
-    font-size: 16px;
+/* Secondary Navigation Menu (About, Resume, Contact under Profile) */
+.navmenu2 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    display: flex;
+    gap: 30px;
+    font-family: var(--title-font);
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
     text-align: center;
-    border-spacing: 0px;
-    border: solid black 1px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: var(--longshadow);
-  }
-
-  th, td {
-    border: 1px dotted var(--gunmetal); /* Black border */
-    padding: 10px 15px;
-  }
-
-  thead th {
-    background-color: var(--orange); /* Top header background */
-    color: white; /* White text for header */
-    text-transform: uppercase;
-  }
-
-
-  tbody tr:hover {
-    background-color: #cccccc; /* Highlight row on hover */
-  }
-
-  th {
-    font-weight: bold;
-  }
-
-.onedot{
-    border: 0;
-    border-top: 10px dotted lightgrey; /* Dotted line */
-    margin: 50px auto 50px;   
-    width: 20px;
 }
 
-.threedots{
-    border: 0;
-    border-top: 10px dotted lightgrey; /* Dotted line */
-    margin: 50px auto 50px;  
-    width: 70px;            
+.navmenu2 p {
+    text-align: center;
+    height: 8px;
 }
 
-.container {
-    margin: 20px 0px 50px;
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-/*Images*/
-
-a img {
-    border-radius: 1px;
-    box-shadow: none;
-    width: 90%;
-    margin: 0 auto
+.dropdown-content {
+    display: none;
+    right: 0;
+    top: 120%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    position: absolute;
+    background-color: var(--orange);
+    z-index: 1;
+    padding: 0;
+    width: 180px;
 }
 
-img {
-    display: block;
-    border-radius: 30px;
-    box-shadow: var(--longshadow);
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+/* 7. Components
+   ========================================================================== */
+/* Table of Contents Navigation */
+.float {
+    position: fixed;
+    top: 80px;
+    z-index: 10;
+    height: 10em;
+    margin: 0 auto;
 }
 
-footer img {
-    border-radius: none;
-    box-shadow: none;
+.jump {
+    margin: 0 auto;
+    padding: 20px 5px 0;
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.7;
+    position: absolute;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.socials img {
-    border-radius: 0px;
-    width: 30px;
-    box-shadow: none;
+.jump ul {
+    list-style-type: none;
+    padding: 0 10px;
+}
 
+/* Portfolio/Profile Page Styles */
+.profile {
+    text-align: center;
+    font-size: 18px;
+    margin: 15px auto;
+    width: 900px;
 }
 
 .profile-link {
@@ -442,8 +289,8 @@ footer img {
 
 .profile-link img {
     display: block;
-    margin: 0 auto; /* Adjust spacing here */
-    width:40px;
+    margin: 0 auto;
+    width: 40px;
 }
 
 .profilepic {
@@ -451,356 +298,80 @@ footer img {
     box-shadow: var(--longshadow);
     width: 144px;
 }
-
-/*Navigation bar*/
-nav {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
-    width: 100%; /* Ensure full width of the container */
-    gap: 10px;
-    padding-top: 8px;
-  }
-  
-  .navleft {
-    padding: 5px 20px 5px;
-  }
-  
-  .navright {
-    padding: 5px 20px 5px;
-  }
-
-  .navright ul {
-    justify-content: end;
-  }
-
-.navmenu{
-  list-style-type: none; /* Removes bullets */
-  padding: 0;
-  margin: 0;
-  display: flex; /* Makes the list horizontal */
-  gap: 50px; /* Adds spacing between items */
-  font-family: var(--title-font);
-  justify-content: center; /* Centers the entire menu within its container */
-  align-items: center; /* Vertically centers items */
-  font-size: 26px;
-}
-
-.navmenu2{
-    list-style-type: none; /* Removes bullets */
-    padding: 0;
-    margin: 0;
-    height: 100px;
-    display: flex; /* Makes the list horizontal */
-    gap: 30px; /* Adds spacing between items */
-    font-family: var(--title-font);
-    justify-content: center; /* Centers the entire menu within its container */
-    align-items: center; /* Vertically centers items */
-    font-size: 24px;
-    text-align: center;
-    }
-.navmenu2 p{
-    text-align: center;
-    height:8px;
-}
-
-/*Dropdown Menu*/
-.navmenu {
-    list-style-type: none;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* The dropdown content (hidden by default) */
-.dropdown-content {
-    display: none; /* Hidden by default */
-    right:0;
-    top: 120%;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: var(--shadow);
-    position: absolute;
-    background-color: var(--orange); /* Background color for dropdown */
-    z-index: 1;
-    padding: 0px; /* Remove padding if the list appears off */
-    list-style: none; /* Remove bullet points if present */
-    width: 180px; /* Adjust as needed */
-}
-
-/* Individual dropdown links */
-.dropdown .dropdown-content a {
-    display: block; /* Stack items vertically */
-    padding: 10px 15px; /* Add spacing for better appearance */
-    text-decoration: none; /* Remove underline */
-    color: white; /* Default text color */
-    box-sizing: border-box; /* Ensures border doesn't affect dimensions */
-}
-
-/* Hover effect for dropdown links */
-.dropdown .dropdown-content a:hover {
-    background-color: white; /* Highlight on hover */
-    color: var(--orange);
-    border: 2px solid var(--orange); /* Add border without affecting size */
-    border-width: 1px; /* Ensure the border is consistent */
-    border-radius: 5px;
-}
-
-/* Show the dropdown menu when active */
-.dropdown .dropdown-content.show {
-    display: block;
-}
-
-    .buttoncontainer {
-            display: flex;
-            text-align: center; 
-            justify-content: center;
-            align-items: center;
-            margin: 30px 50px 5px;
-          }
-
-    .float {
-        top: 80px;
-        position: sticky;
-        z-index: 10;
-        height: 10em;
-        position: fixed;
-        margin: 0px auto;
-    }
-
-    .jump {
-        margin: 0px auto;
-        padding: 20px 5px 0px;
-        font-size: 12px;
-        text-align: left;
-        line-height: 1.7;
-        position: absolute;
-        width: 200px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-    .jump ul {
-        list-style-type: none; 
-        padding: 0px 10px;
- 
-    }
-
-
-    button {
-        list-style-type: none; /* Removes bullets */
-        padding: 0;
-        margin: 0px 10px 0px;
-        display: flex; /* Makes the list horizontal */
-        font-family: var(--title-font);
-        color: var(--orange);
-        justify-content: center; /* Centers the entire menu within its container */
-        align-items: center; /* Vertically centers items */
-        font-size: 24px;
-        background-color: white;
-        border: white;
-        cursor: pointer;
-    }
-
-    button:hover {
-        list-style-type: none; /* Removes bullets */
-        padding: 0;
-        margin: 0px 10px 0px;
-        display: flex; /* Makes the list horizontal */
-        font-family: var(--title-font);
-        color: var(--orange);
-        justify-content: center; /* Centers the entire menu within its container */
-        align-items: center; /* Vertically centers items */
-        font-size: 24px;
-        cursor: pointer;
-        border-bottom: 2px solid var(--orange);
-    }
-
-  .button {
+/* Buttons */
+.button {
     display: inline-block;
     color: white;
     background-color: var(--orange);
-    border: none;
-    padding: 5px 10px; /* Padding for the button */
-    border-color: #be5103;
-    border-radius:5px;
-    border-width: 3px;
-    border-style: solid;
+    border: 3px solid var(--orange);
+    padding: 5px 10px;
+    border-radius: 5px;
     box-shadow: var(--longshadow);
-    cursor: pointer; /* Pointer cursor on hover */
+    cursor: pointer;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
-    }
-
+}
 
 .button:hover {
-    display: inline-block;
-    color: white;
-    background-color: var(--orange);
-    border: none;
-    padding: 5px 10px; /* Padding for the button */
-    border-color: #be5103;
-    border-radius:5px;
-    border-width: 3px;
-    border-style: solid;
     transform: translate(4px, 4px);
     box-shadow: var(--shadow);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-.bigbutton {
-    display: inline-block;
-    font-size: 20px;
-    font-family: var(--title-font);
-    background-color: var(--orange);
-    color: white;
-    border: none; /* No border */
-    padding: 10px 20px; /* Padding for the button */
-    border-color: #be5103;
-    border-radius:5px;
-    border-width: 3px;
-    border-style: solid;
-    box-shadow: var(--longshadow);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-     }
-
-.bigbutton:hover {
-    font-size: 20px;
-    font-family: var(--title-font);
-    background-color: var(--orange);
-    color: white;
-    border: none; /* No border */
-    padding: 10px 20px; /* Padding for the button */
-    border-color: #be5103;
-    border-radius:5px;
-    border-width: 3px;
-    border-style: solid;
-    box-shadow: var(--shadow);
-    transform: translate(4px, 4px);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-.bigbutton.active {
-    font-size: 20px;
-    font-family: var(--title-font);
-    background-color: var(--orange);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-color: #be5103;
-    border-radius: 5px;
-    border-width: 3px;
-    border-style: solid;
-    box-shadow: var(--shadow);
-    transform: translate(4px, 4px);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-
-/*Socials Spread*/
-.socials {
-    margin: 35px 0px 20px
-}
-
-.sociallist{
-    list-style-type: none; /* Removes bullets */
-    padding: 0;
-    margin: 24px 0px 24px;
-    display: flex; /* Makes the list horizontal */
-    gap: 50px; /* Adds spacing between items */
-    justify-content: center; /* Centers the entire menu within its container */
-    align-items: center; /* Vertically centers items */
-}
-
-.sociallist img {
-    width: 30px;
-}
-
-
-.currentrolescontainer {
-    display: grid;
-    grid-template-columns: auto auto auto; /* 3 equal-width columns */
-    grid-template-rows: auto auto;
-    align-items: center;
-}
-
-.gridbox {
-    padding: 0px 6px 0px;
-}
-
-.tallgridbox {
-    padding: 6px;
-    grid-column: span 1;
-    grid-row: span 2;
-    
-}
-
-.longgridbox {
-    padding: 0px 6px 0px;
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
+/* Cards & Boxes */
 .borderbox {
-    border-color: #be5103;
+    border: 2px solid var(--orange);
     border-radius: 33px;
-    border-width: 2px;
-    border-style: solid;
-    padding: 10px 10px 10px;
+    padding: 10px;
     box-shadow: var(--longshadow);
-    margin: 10px 0px 10px;
+    margin: 10px 0;
 }
 
-.borderbox p {
- padding: 0px 5px 0px;
-}
-
-.borderboxgreen {
-    border-color: var(--gunmetal);
-    border-radius: 33px;
-    border-width: 2px;
-    border-style: solid;
-    padding: 10px 10px 10px;
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: separate;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: center;
+    border-spacing: 0;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
     box-shadow: var(--longshadow);
-    margin: 0px 0px 0px;
 }
 
-.borderboxgreen p {
-    padding: 0px 5px 0px;
-   }
-
-   .subjectbox {
-    border-color: #be5103;
-    border-radius: 33px;
-    border-width: 3px;
-    border-style: solid;
-    padding: 10px 10px 10px;
-    margin: 0px;
+/* Images */
+img {
+    display: block;
+    border-radius: 30px;
+    box-shadow: var(--longshadow);
+    width: 50%;
+    margin: 0 auto;
 }
 
-/*Game stuff*/
+/* 8. Blog Specific
+   ========================================================================== */
+.blogpost {
+    color: var(--black);
+}
+
+.post-title-container {
+    height: 70vh;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 4px solid var(--gunmetal);
+}
+
+/* 9. Game Elements
+   ========================================================================== */
 .vs {
     display: flex;
-    flex-direction: row; /* Boxes side by side */
+    flex-direction: row;
     justify-content: center;
-    gap: 10px; /* Space between boxes */
-    padding-top: 20px;
-    padding-bottom: 20px
-}
-
-.box {
-    display: flex;
-    flex-direction: column; /* Stack text content vertically */
-    border: 2px solid #333; /* Add border line with color and thickness */
-    border-radius: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px
-}
-
-.box p {
-    margin: 2px 0;
+    gap: 10px;
+    padding: 20px 0;
 }
 
 .gamebuttons {
@@ -808,52 +379,34 @@ nav {
     justify-content: center;
 }
 
-.gamebuttons button {
-border: 2px solid var(--orange);
-border-color: var(--orange);
-border-radius: 20px;
-font-size: 20px;
-font-family: "Aptos";
-padding:10px;
-color: white;
-background-color:var(--orange);
+/* 10. Footer
+   ========================================================================== */
+footer {
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    background-color: var(--orange);
+    color: white;
+    bottom: 0;
+    height: 200px;
 }
 
-.gamebuttons button:hover {
-        border: 2px solid var(--orange);
-        border-radius: 20px;
-        font-size: 20px;
-        font-family: "Aptos";
-        padding: 10px;
-        color: var(--orange);
-        background-color: white;
-        box-shadow: none;
+/* 11. Media Queries
+   ========================================================================== */
+@media screen and (min-width: 780px) {
+    .mobileinclude {
+        display: none;
     }
 
-/*Blog stuff*/
-.blogpost {
-    color: var(--black);
-}
+    .mobileonly {
+        display: none;
+    }
 
-.blogpost a {
-    color: var(--black);
+    .mobileexclude {
+        display: block;
+    }
 }
-
-footer {
-    margin: 0 auto; /* Center the footer horizontally */
-    padding: 0 10px; /* Padding from left and right */
-    text-align: center; 
-    justify-content: center; 
-    display: flex; 
-    flex-wrap: wrap; /* Allow text to wrap */
-    font-size: 16px; 
-    background-color: var(--orange); 
-    color: white; /* Text color set to white */
-    bottom: 0; /* Position at the bottom */
-    height: 200px; /* Optional height, adjust as needed */
-}
-
-.footercontainer {
-    width: 100vw;
-}
-
