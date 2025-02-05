@@ -73,8 +73,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -163,7 +162,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a8dc986d48d0deff",
+  "active": "de18d593cb4ec4f8",
   "lastOpenFiles": [
     "images/notionface.png",
     "images/my-notion-face-portrait.png",
