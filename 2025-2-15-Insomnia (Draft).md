@@ -1,11 +1,9 @@
 ---
 layout: post
-title: This is where good writing goes!
+title: "Common Threads: On Insomnia, Andrew Birds' Toxic Perfectionism, and The Eternal Night of Stephen King's The Jaunt"
 category: writing
 ---
-Working title: Common Threads: On Insomnia, Andrew Birds' Toxic Perfectionism, and The Eternal Night of Stephen King's The Jaunt
-
-
+*This post is under construction*
 
 ### On Insomnia, Part 1
 As the anniversary rolls around, I remember February 2024 as the beginning of a mental health crisis lasting about two-months. During that time, I struggled with relentless insomnia, and had trouble sustaining more than 1-2 hours of sleep each night due to panic attacks lasting for hours, leaving me exhausted and on the edge.
