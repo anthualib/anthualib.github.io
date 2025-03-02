@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Book Bans and AAPI Safety: How Literature Censorship Affects Lived Reality
+title: "Book Bans and AAPI Safety: How Literature Censorship Affects Lived Reality"
 category: writing
 ---
 
