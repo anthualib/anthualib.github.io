@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/writing/2025-2-15-Insomnia.md",
+                "file": "_posts/writing/2025-1-24-Backend.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2025-2-15-Insomnia"
+              "title": "2025-1-24-Backend"
             }
           }
         ],
@@ -191,10 +191,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "998cb0bd59d36215",
+  "active": "af7812670b21a489",
   "lastOpenFiles": [
-    "_posts/writing/2025-3-2-Book-Bans-and-AAPI-Safety.md",
     "_posts/writing/2025-2-15-Insomnia.md",
+    "_posts/writing/2025-3-2-Book-Bans-and-AAPI-Safety.md",
     "_posts/writing/2025-1-24-Backend.md",
     "2025-1-10-Writing.md",
     "2025-2-15-Insomnia (Draft).md",
