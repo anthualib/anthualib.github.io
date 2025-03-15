@@ -1,4 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anthony Hua</title>
+    <link rel="icon" type="image/png" href="/images/notionface.png">
 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
+  </head>
+  <body>
+<div class="full"> <!-- Everything wrapped in "full" will fill the screen height-->
+    <header>
+        <nav id="top"> <!-- Anchor for the top of the page. Only pages with contents can take advantage of this-->
+            <div class="navleft mobileinclude"> <!-- Placeholder container. Can be used if I'm using the left side  -->
+    <h1>Anthony Hua</h1>
+            </div>
+        <div id="headercontainer"> <!-- Fetch javascript for header, pulls /assets/header.html dynamically  -->
+        </div>
+     </header>
+<div class="three-column-grid"> <!-- 5-column Layout  -->
+    <div class="sidecolumn"></div>  <!-- Column 1 is where table of contents will be loaded in, for some pages  -->
+    <div class="profile centerflex"> <!-- Columns 2-4 is where main contents will be loaded in  -->
+        <h1 class="logo mobileexclude"><a href="/index.html">Anthony Hua</a></h1>
+        <img class="profilepic" src="images/profile.jpeg">
+        <p class="bio">Hiya! My name is Anthony Hua! I am a full-time library employee at UW-Madison’s Memorial Library, with a love of public services and student supervising. I am also pursuing a Master’s in Library and Information Science, where I am currently exploring my interests in research support and data analysis.</p>
+        <ul class="navmenu2"> <!-- Links for the javascript triggering fetch content -->
+            <li><div class="buttoncontainer"><button id="loadabout">About Me</button></div></li> <!-- Fetch javascript for footer, pulls /assets/about.html dynamically  -->
+            <p>/</p>
+            <li><div class="buttoncontainer"><button id="loadroles">My Work</button></div></li> <!-- Fetch javascript for footer, pulls /assets/roles.html dynamically  -->
+            <p>/</p>
+            <li><div class="buttoncontainer"><button id="loadcareer">Contact Me</button></div></li> <!-- Fetch javascript for footer, pulls /assets/career.html dynamically  -->
+        </ul>
+        <button id="loadcontacts" style="display:none;">Load Contacts</button>
+    </div>
+    </div>
+    </div>
+      
 <div class="three-column-grid">
     <div class="sidecolumn">
         <div class="float">
@@ -25,8 +65,8 @@
     </div>
  
     <main>
-        <div class="mobileinclude sticky flexcentered">
-            <a href="/index.html" class="backbutton">×</a>
+        <div class="mobileinclude sticky">
+            <a href="/index.html" class="backbutton">⨉</a>
                         </div>
 
                 <!-- Below is the content for this page-->
@@ -36,8 +76,8 @@
         <h2 id="childhood">Facts About Anthony</h2>
      
         <div class="columns">
-            <div class="column-33"><img src="/images/twins.jpeg" style="width: 250px";></div>
-            <div class="column-33"><img src="/images/baby.jpeg" style="width: 260px";></div>
+            <div class="column-33"><img src="/images/twins.jpeg" style="width: 250px" ;=""></div>
+            <div class="column-33"><img src="/images/baby.jpeg" style="width: 260px" ;=""></div>
         </div>
 
            <div>
@@ -53,7 +93,7 @@
     </div>
 
     <div class="columns">
-        <div class="column-33"><img src="/images/ski.jpg" style="width: 250px";></div>
+        <div class="column-33"><img src="/images/ski.jpg" style="width: 250px" ;=""></div>
         <div class="column-33"></div>
     </div>
   
@@ -77,8 +117,20 @@
            
             <img src="/images/madison.jpeg" id="madison">
             <h4>Madison, Wiscosnin</h4>
-            <p class ="center"><em>2024 to ongoing</em></p>
+            <p class="center"><em>2024 to ongoing</em></p>
             <p>I live in Madison and work full-time at the University of Wisconsin-Madison Libraries. I am also attending the iSchool, where I am pursuing an MA in Library and Information Studies. You can read more about what I am doing here on my <a href="currentroles.html" data-type="page" data-id="156">Current Roles page</a>.</p>
             <p>The city of Madison should win a reward for “most interesting place that the rest of the country doesn’t really know about”. The city is home to the state capitol, a major four-year university, and a charming downtown, all stuffed on a narrow strip of land between two lakes. Also notable are the phenomenal parks, and the extensive bike trail converted from former railway. It’s because of this that the League of American Bicyclists has labeled Madison one of the most bikeable cities in the US.</p>
        <div class="threedots"></div>
-        </main>
+        </div></main></div>
+<footer>
+    <div id="footercontainer"></div>  <!-- Fetch javascript for footer, pulls /assets/footer.html dynamically  -->
+</footer>
+</body>
+<script src="/scripts/profilefetch.js"></script>
+<script src="/scripts/headerfetch.js"></script>
+<script>
+    function toggleMenu() {
+        document.getElementById("mobileMenu").classList.toggle("active");
+    }
+</script>
+</html>

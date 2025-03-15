@@ -16,6 +16,10 @@ nav {
     display: ;
 }
 
+    .mobilelogo {
+        text-align: left;
+    }
+
     .navmenu {
         display: flex;
         flex-direction: column;
@@ -23,7 +27,10 @@ nav {
     }
 
     .navleft {
-        display: none;
+        width: 80vw;
+        padding: 0;
+        justify-content: flex-start;
+        text-align: left;
     }
 
 
@@ -48,8 +55,8 @@ nav {
 
     h1 {
         color: var(--orange);
-        font-family: var(--logo-font);
-        font-size: 65px;
+        font-family: var(--title-font);
+        font-size: 2rem;
         text-shadow: var(--shadow);
         margin: 10px 20px 10px; /*top, sides, bottom*/
         text-align: center;
@@ -117,6 +124,7 @@ nav {
     body {
         font-family: "Aptos";
         color:var(--grey);
+        margin: 0px;
     }
     
     .bio{
@@ -145,6 +153,7 @@ nav {
         border-radius: 100px;
         box-shadow: var(--longshadow);
         width: 144px;
+        margin: 5vh auto;
     }
 
 
@@ -154,15 +163,19 @@ nav {
         display: grid;
         width: 100%; /* Ensure full width of the container */
         margin: 0px auto;
-        gap: 10px;
       }
 
       #headercontainer {
-        width:100vw;
+
+      }
+      .navright {
+        width:10vw;
+        padding: 0;
       }
 
-    .navright {
 
+    .navright ul {
+        justify-content: center;
     }
     .navmenu{
         list-style-type: none; /* Removes bullets */
@@ -179,15 +192,22 @@ nav {
       .navmenu2{
         list-style-type: none; /* Removes bullets */
         padding: 0;
-        margin: 0px 10px 0px;
+        margin: 0px;
         display: flex; /* Makes the list horizontal */
         font-family: var(--title-font);
         justify-content: center; /* Centers the entire menu within its container */
         align-items: center; /* Vertically centers items */
         font-size: 24px;
+        gap: 0px;
+        width: 90vw;
+        border: 2px solid black;
+        border-radius: 80px;
+        margin-left: 2vh;
+        margin-right: 2vh;
+        height:130px;
         }
         .navmenu2 li{
-            width:170px;
+            width: 30%;
         }
         
       .navmenu2 p{
@@ -200,8 +220,8 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 50%;
+    width: 100vw;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.9);
     display: none;
     flex-direction: column;
@@ -220,7 +240,7 @@ nav {
     color: white;
     font-size: 2rem;
     text-decoration: none;
-    margin: 15px;
+    margin: 0px;
 }
 
 /* Close button */
@@ -228,23 +248,20 @@ nav {
     position: block;
     top: 50%;
     right: 50%;
-    font-size: 2rem;
+    font-size: 4rem;
     color: white;
     cursor: pointer;
 }
 
 /* Hamburger button */
 .hamburger {
-    position: block;
     top: 20px;
     right: 20px;
-    background: black;
+    background: var(--orange);
     color: white;
     padding: 10px 15px;
     font-size: 1.5rem;
     border: none;
-    cursor: pointer;
-    display: none; /* Hide by default */
 }
 
 .dropdown-content {
@@ -328,7 +345,6 @@ nav {
 
     .mobileinclude {
         display: flex; /* Enables flexbox for alignment */
-        justify-content: center; /* Centers content horizontally */
         align-items: center; /* Centers content vertically */
     }
 
@@ -408,11 +424,13 @@ nav {
         cursor: pointer;
     }
 
+    button:hover {
+        border: 2px solid black;
+    }
+
 
     .buttoncontainer {
-        width:80px;
-        position: sticky;
-        top: 20px;
+        margin: 5px 10px;
       }
 
       .backbutton {

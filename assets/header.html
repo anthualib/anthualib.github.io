@@ -1,18 +1,21 @@
-
-    <div class="navright"> 
-        <ul class="navmenu">
-            <li><a href="/index.html">Profile</a></li>
-            <li><a href="/writing">Writing</a></li>
-            <li>
-                <div class="dropdown">
-                    <a href="#" class="bigbutton" id="dropdownButton">More</a>
-                    <div class="dropdown-content" id="dropdownMenu">
-                        <a href="/recipes">Recipes</a>
-                        <a href="/game.html">Games?</a>
-                    </div>
+<div class="navright"> 
+    <button class="hamburger mobileonly" onclick="toggleMenu()">☰</button>
+    <ul class="navmenu menu-overlay" id="mobileMenu">
+        <span class="close-menu" onclick="toggleMenu()">&times;</span>
+        <li><a href="/index.html">Profile</a></li>
+        <li><a href="/writing">Writing</a></li>
+        <li class="mobileinclude"><a href="/recipes">Recipes</a></li>
+        <li class="mobileinclude"><a href="/game.html">Games?</a></li>
+        <li>
+            <div class="dropdown">
+                <a href="#" class="bigbutton mobileexclude" id="dropdownButton">More</a>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="/recipes">Recipes</a>
+                    <a href="/game.html">Games?</a>
                 </div>
-            </li>
-        </ul>
-        
+            </div>
+        </li>
+    </ul>
+    
 </nav>  
 

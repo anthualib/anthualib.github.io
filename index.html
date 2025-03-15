@@ -15,7 +15,8 @@
 <div class="full"> <!-- Everything wrapped in "full" will fill the screen height-->
     <header>
         <nav id="top"> <!-- Anchor for the top of the page. Only pages with contents can take advantage of this-->
-            <div class="navleft"> <!-- Placeholder container. Can be used if I'm using the left side  -->
+            <div class="navleft mobileinclude"> <!-- Placeholder container. Can be used if I'm using the left side  -->
+    <h1>Anthony Hua</h1>
             </div>
         <div id="headercontainer"> <!-- Fetch javascript for header, pulls /assets/header.html dynamically  -->
         </div>
@@ -23,7 +24,7 @@
 <div class="three-column-grid"> <!-- 5-column Layout  -->
     <div class="sidecolumn"></div>  <!-- Column 1 is where table of contents will be loaded in, for some pages  -->
     <div class="profile centerflex"> <!-- Columns 2-4 is where main contents will be loaded in  -->
-        <h1 class="logo"><a href="/index.html">Anthony Hua</a></h1>
+        <h1 class="logo mobileexclude"><a href="/index.html">Anthony Hua</a></h1>
         <img class="profilepic" src="images/profile.jpeg">
         <p class="bio">Hiya! My name is Anthony Hua! I am a full-time library employee at UW-Madison’s Memorial Library, with a love of public services and student supervising. I am also pursuing a Master’s in Library and Information Science, where I am currently exploring my interests in research support and data analysis.</p>
         <ul class="navmenu2"> <!-- Links for the javascript triggering fetch content -->
@@ -44,4 +45,9 @@
 </body>
 <script src="/scripts/profilefetch.js"></script>
 <script src="/scripts/headerfetch.js"></script>
+<script>
+    function toggleMenu() {
+        document.getElementById("mobileMenu").classList.toggle("active");
+    }
+</script>
 </html>
