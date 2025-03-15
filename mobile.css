@@ -16,6 +16,11 @@ nav {
     display: ;
 }
 
+.flexcentered {
+    justify-content: center;
+    align-items: center;      
+}
+
     .mobilelogo {
         text-align: left;
     }
@@ -27,10 +32,15 @@ nav {
     }
 
     .navleft {
-        width: 80vw;
+        width: calc(100vw - 100px);
         padding: 0;
         justify-content: flex-start;
         text-align: left;
+        min-width: 193px;
+    }
+
+    .navleft h1 {
+        color: var(--orange)
     }
 
 
@@ -50,14 +60,13 @@ nav {
     }
     
     main p {
-        padding: 0px 0px 1px;
+        text-align: left;
     }
 
     h1 {
-        color: var(--orange);
+        color: var(--black);
         font-family: var(--title-font);
         font-size: 2rem;
-        text-shadow: var(--shadow);
         margin: 10px 20px 10px; /*top, sides, bottom*/
         text-align: center;
     }
@@ -130,6 +139,7 @@ nav {
     .bio{
         font-size: 23px;
         padding: 10px 20px 10px;
+        text-align: center;
     }
     
     /*Images*/
@@ -187,6 +197,7 @@ nav {
         justify-content: center; /* Centers the entire menu within its container */
         align-items: center; /* Vertically centers items */
         font-size: 5vw;
+        width: 100%;
       }
     
       .navmenu2{
@@ -196,14 +207,12 @@ nav {
         display: flex; /* Makes the list horizontal */
         font-family: var(--title-font);
         justify-content: center; /* Centers the entire menu within its container */
-        align-items: center; /* Vertically centers items */
         font-size: 24px;
-        gap: 0px;
-        width: 90vw;
-        border: 2px solid black;
+        align-items: center; /* Vertically centers items */
+        gap: 10px;
+        width: 100%;
         border-radius: 80px;
-        margin-left: 2vh;
-        margin-right: 2vh;
+        margin: auto;
         height:130px;
         }
         .navmenu2 li{
@@ -270,12 +279,21 @@ nav {
 #dropdownMenu {
     display: block;
 }
+.centered-list {
+text-align:left; /* Centers the list as a block */
+padding-left:30px;
+}
 
+.center {
+    text-align: center;
+}
 
       img {
         border-radius: 30px;
         box-shadow: var(--longshadow);
         width: 90%;
+        margin: 15px auto;
+        padding: 0px;
     }
 
     .button {
@@ -302,7 +320,7 @@ nav {
         border: none;
         padding: 5px 10px; /* Padding for the button */
         border-color: #be5103;
-        border-radius:5px;
+        border-radius: 50px;
         border-width: 3px;
         border-style: solid;
         transform: translate(4px, 4px);
@@ -419,18 +437,30 @@ nav {
         justify-content: center; /* Centers the entire menu within its container */
         align-items: center; /* Vertically centers items */
         font-size: 24px;
-        background-color: white;
-        border: white;
+        background-color: none;
+        border: none;
         cursor: pointer;
+        padding: 10px;
+        border-radius: 20px;
     }
 
     button:hover {
-        border: 2px solid black;
+        border: none;
+        color: white;
+        background-color: var(--orange);
+        padding: 5px;
     }
+
+    button.active {
+        color: white;
+        background-color: var(--orange);
+    }
+    
 
 
     .buttoncontainer {
-        margin: 5px 10px;
+        padding: 5px;
+        margin: 2px;
       }
 
       .backbutton {
