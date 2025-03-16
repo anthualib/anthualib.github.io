@@ -12,8 +12,10 @@ header {
 margin: 0  auto;
 }
 
-nav {
-    display: ;
+
+
+.three-column-grid {
+margin: 5px;
 }
 
 .flexcentered {
@@ -51,6 +53,7 @@ nav {
         margin: 2% auto;
         width: 95%;
         max-width: 480px;
+ 
     }
 
 
@@ -79,7 +82,7 @@ nav {
     h3 {
         color: var(--black);
         font-family: var(--title-font);
-        margin: 1-px 0px 0px;
+        margin: 10px 0px 0px;
     }
     
     h4 {
@@ -95,12 +98,7 @@ nav {
         border-bottom: none;
     }
     
-    .logo a:hover {
-        text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);;
-        transform: translate(2px, 2px); /* Moves the link 2px right and 2px down */
-        transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
-    }
-    
+
     .logomini a {
         text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.2);
         display: inline-block; /* Ensure the link is treated as a block for transform */
@@ -122,13 +120,6 @@ nav {
         transition: border-bottom-color 0.3s ease, border-bottom-width 0.3s ease;
     }
     
-    a:hover {
-        color: var(--orange);
-        text-decoration: none;
-        text-shadow: none;
-        border-bottom-color: var(--orange);
-        transition: border-bottom-color 0.3s ease, border-bottom-width 0.3s ease;
-    }
     
     body {
         font-family: "Aptos";
@@ -312,22 +303,6 @@ padding-left:30px;
     
         }
     
-    
-    .button:hover {
-        display: inline-block;
-        color: white;
-        background-color: var(--orange);
-        border: none;
-        padding: 5px 10px; /* Padding for the button */
-        border-color: #be5103;
-        border-radius: 50px;
-        border-width: 3px;
-        border-style: solid;
-        transform: translate(4px, 4px);
-        box-shadow: var(--shadow);
-        transition: transform 0.5s ease, box-shadow 0.5s ease;
-    }
-    
 
 
     .sticky {
@@ -370,6 +345,17 @@ padding-left:30px;
         display: flex;
     }
 
+    .currentrolescontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gridbox {
+        margin: 0px 5px;
+    }
+    
+
     .borderbox {
         border-color: #be5103;
         border-radius: 33px;
@@ -379,38 +365,60 @@ padding-left:30px;
         box-shadow: var(--longshadow);
         margin: 10px 0px 0px;
     }
+
+    .borderbox p {
+        padding: 0px 5px 0px;
+        margin: 5px 0px 10px 0px;
+        text-align: center;
+    }
     
     .borderboxgreen {
         border-color: var(--green);
         border-radius: 33px;
         border-width: 2px;
         border-style: solid;
-        padding: 10px 10px 10px;
+        padding: 0px 20px 0px;
         box-shadow: var(--longshadow);
-        margin: 10px 0px 10px;
+        margin: 10px 0px 0px;
     }
+
+    .borderboxgreen p {
+        padding: 0px 5px 0px;
+        margin: 5px 0px 10px 0px;
+        text-align: center;
+    }
+
+    .horizontal-list {
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+    }
+
 
     footer {
         margin: 0px auto;
-        padding: 0px 10px;
+        padding: 10px 10px;
         text-align: center;
         justify-content: center;
         display: flex;
-        font-size:12px
+        font-size:12px;
+        height: auto;
     }
 
     .onedot{
-        border: 0;
-        border-top: 10px dotted lightgrey; /* Dotted line */
-        margin: 40px auto 30px;   
-        width: 10px;
+        width: auto; /* Adjust width as needed */
+        height: 25px; /* Set the height to fit the image */
+        margin: 20px auto 30px;
+        background: url('/images/onedot.png') center/contain no-repeat;
     }
     
     .threedots{
-        border: 0;
-        border-top: 10px dotted lightgrey; /* Dotted line */
-        margin: 50px auto 30px;   
-        width: 50px;
+        width: auto; /* Adjust width as needed */
+        height: 25px; /* Set the height to fit the image */
+        margin: 20px auto 30px;
+        background: url('/images/threedots.png') center/contain no-repeat;
     }
 
     .profile-link {
@@ -444,12 +452,6 @@ padding-left:30px;
         border-radius: 20px;
     }
 
-    button:hover {
-        border: none;
-        color: white;
-        background-color: var(--orange);
-        padding: 5px;
-    }
 
     button.active {
         color: white;
@@ -485,4 +487,38 @@ padding-left:30px;
         height: 10vh; 
     }
 
+    a p {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    /*blog stuff*/
+
+.post {
+    text-align: center;
+}
+
+.posttitle {
+    font-size: 2.3rem;
+}
+
+.post-title-container {
+    width: 96%;
+    margin: 0px auto;
+    min-height: 430px;
+}
+
+.postdate {
+    font-size: 1.5rem;
+}
+
+.postcontent {
+    padding: 5px;
+    width: 100%;
+}
+
+.postcontent h3 {
+    text-align: center;
+}
+    
       }

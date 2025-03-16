@@ -390,17 +390,17 @@ table {
   }
 
 .onedot{
-    border: 0;
-    border-top: 10px dotted lightgrey; /* Dotted line */
-    margin: 50px auto 50px;   
-    width: 20px;
+    width: auto; /* Adjust width as needed */
+    height: 25px; /* Set the height to fit the image */
+    margin: 20px auto 30px;
+    background: url('/images/onedot.png') center/contain no-repeat;
 }
 
 .threedots{
-    border: 0;
-    border-top: 10px dotted lightgrey; /* Dotted line */
-    margin: 50px auto 50px;  
-    width: 70px;            
+    width: auto; /* Adjust width as needed */
+    height: 25px; /* Set the height to fit the image */
+    margin: 20px auto 30px;
+    background: url('/images/threedots.png') center/contain no-repeat;
 }
 
 .container {

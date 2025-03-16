@@ -37,12 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Motivations.md",
+                "file": "POST DRAFTS/Motivations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Motivations"
+            }
+          },
+          {
+            "id": "f2728555c6358bdb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/writing/2025-2-15-Insomnia.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-2-15-Insomnia"
             }
           },
           {
@@ -74,7 +88,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -215,10 +229,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "65f7b9812257d30a",
+  "active": "f2728555c6358bdb",
   "lastOpenFiles": [
+    "POST DRAFTS/2025 Music.md",
+    "testpost.html",
+    "testblog.html",
+    "images/onedot.png",
+    "images/Screenshot 2025-03-15 at 9.10.32 PM.png",
+    "images/threedots.png",
+    "POST DRAFTS/Motivations.md",
+    "POST DRAFTS",
     "_posts/writing/2025-1-24-Backend.md",
-    "Motivations.md",
     "_posts/writing/2025-2-15-Insomnia.md",
     "Metadata Librarian.md",
     "Can42.md",

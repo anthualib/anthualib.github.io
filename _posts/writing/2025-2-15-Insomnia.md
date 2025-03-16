@@ -28,7 +28,7 @@ To the scientists, Rudy's jaunt of a two mile distance was nearly instantaneous-
 
 When reading the Jaunt, I was mislead into different ideas of where King was taking the story. As the scientist seemingly amputates his fingers, or when he observes the cross section of a mouse he would only insert half-way, I was expecting body horror. Afterwards, my rumination on the incomprehensible creature Rudy was possibly seeing in the spatial in-between drew me to cosmic horror. There is no blood or monsters, the true horror of this story is simply time--consciousness trapped in its own awareness, forever, without the relief of sleep or death.
 
-
+---
 ### Andrew Birds' Toxic Perfectionism
 Suzuki-method, whistling virtuoso, and violinist Andrew Bird has never been an artist bounded by genre. The storytelling lyricism and fingerstyled violin and guitar of *Pulaski and Night* and *Sisyphus* gives a folksy, troubadour-like quality. His experimental early work in *Thrills* feature influences in Americana-laced swing and and gyspy jazz. And his complex arrangement in many choruses and his instrumental works like *Echolocations* or *Outside Problems* are reminiscent of Baroque or Romantic-era classical music. Beyond his technical prowess, Bird's songwriting often wrestles the mind' contradiction, for instance, his 2022 album *Inside Problem* delves into inner turmoil and late-night anxieties. However, these themes have sat ruminating in Bird's repository in the decade prior.
 
