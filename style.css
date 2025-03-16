@@ -262,6 +262,11 @@ a {
     border-bottom: 2px solid transparent;
 }
 
+a p {
+    margin-top:10px;
+    margin-bottom:0px;
+}
+
 footer p a {
     color: white;
     text-decoration: underline; /* Example: underline links */
@@ -635,6 +640,7 @@ nav {
     box-shadow: var(--longshadow);
     cursor: pointer; /* Pointer cursor on hover */
     transition: transform 0.5s ease, box-shadow 0.5s ease;
+    margin: 15px;
     }
 
 
@@ -651,6 +657,7 @@ nav {
     transform: translate(4px, 4px);
     box-shadow: var(--shadow);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
+    margin: 15px;
 }
 
 .bigbutton {
