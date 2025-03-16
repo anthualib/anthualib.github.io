@@ -856,12 +856,26 @@ footer {
     text-align: center; 
     justify-content: center; 
     display: flex; 
+    flex-direction: column;
     flex-wrap: wrap; /* Allow text to wrap */
     font-size: 16px; 
     background-color: var(--orange); 
     color: white; /* Text color set to white */
     bottom: 0; /* Position at the bottom */
-    height: 200px; /* Optional height, adjust as needed */
+    height: 400px; /* Optional height, adjust as needed */
+}
+
+footer h2 {
+    color:white;
+}
+
+footer a {
+    color: white;
+}
+
+footer .navmenu a:hover {
+    color: white;
+    border-bottom: 2px solid white;
 }
 
 .footercontainer {
