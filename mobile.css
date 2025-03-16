@@ -417,6 +417,26 @@ padding-left:30px;
         height: auto;
     }
 
+
+    .footernav{
+        list-style-type: none; /* Removes bullets */
+        padding: 20px;
+        margin: 0;
+        display: flex; /* Makes the list horizontal */
+        gap: 50px; /* Adds spacing between items */
+        font-family: var(--title-font);
+        justify-content: center; /* Centers the entire menu within its container */
+        align-items: center; /* Vertically centers items */
+        font-size: 26px;
+        flex-wrap: wrap;
+      }
+
+    footer p {
+        width: 90%;
+        margin: auto; 
+        padding: 50px;
+    }
+
     .onedot{
         width: auto; /* Adjust width as needed */
         height: 25px; /* Set the height to fit the image */
