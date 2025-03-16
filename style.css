@@ -882,3 +882,15 @@ footer .navmenu a:hover {
     width: 100vw;
 }
 
+.footernav{
+    list-style-type: none; /* Removes bullets */
+    padding: 20px;
+    margin: 0;
+    display: flex; /* Makes the list horizontal */
+    gap: 50px; /* Adds spacing between items */
+    font-family: var(--title-font);
+    justify-content: center; /* Centers the entire menu within its container */
+    align-items: center; /* Vertically centers items */
+    font-size: 26px;
+  }
+
