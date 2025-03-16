@@ -453,9 +453,21 @@ padding-left:30px;
     }
 
 
-    button.active {
-        color: white;
-        background-color: var(--orange);
+    .active {
+        list-style-type: none; /* Removes bullets */
+        padding: 0;
+        margin: 0px 10px 0px;
+        display: flex; /* Makes the list horizontal */
+        font-family: var(--title-font);
+        color: var(--orange);
+        justify-content: center; /* Centers the entire menu within its container */
+        align-items: center; /* Vertically centers items */
+        font-size: 24px;
+        background-color: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 20px;
     }
     
 
