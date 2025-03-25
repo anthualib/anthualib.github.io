@@ -72,6 +72,10 @@ Addition points to continue writing:
 
 
 
+In retrospect, I know now the mechanics of insomnia. A concept known as hyperarousal keeps the nervous system in a heightened state of alertness, making it difficult for the mind to transition into a state of sleep. The reasons behind hyperarousal can vary: pain from an illness or injury can decrease sleep quality by maintain a sense of "bodily awareness", or stress and anxiety can elicit a feeling of hypervigilence around a potential threat. That is all to say: this is a natural and normal process that kept our ancestors alert to handle threats. But problematic in the modern era when you're trying to get rest before a presentation or important job interview. Regardless, it is something normal.
+
+
+
 Self-isolating is something I am familiar with for better or for worst. As a Buddhist, I often think of the concept of śūnyatā. When reading about it I imageine myself in a saltwater ocean with a goldfish.  But for any concept, to understand something and *experience* something are entirely different experuences
 
 Fatal familial insomnia

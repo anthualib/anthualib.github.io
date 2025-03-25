@@ -107,7 +107,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -231,6 +232,8 @@
   },
   "active": "f2728555c6358bdb",
   "lastOpenFiles": [
+    "2025-2-15-Insomnia (Draft).md",
+    "_posts/writing/2025-2-15-Insomnia.md",
     "POST DRAFTS/2025 Music.md",
     "testpost.html",
     "testblog.html",
@@ -240,13 +243,11 @@
     "POST DRAFTS/Motivations.md",
     "POST DRAFTS",
     "_posts/writing/2025-1-24-Backend.md",
-    "_posts/writing/2025-2-15-Insomnia.md",
     "Metadata Librarian.md",
     "Can42.md",
     "Can9.md",
     "_posts/writing/2025-3-2-Book-Bans-and-AAPI-Safety.md",
     "2025-1-10-Writing.md",
-    "2025-2-15-Insomnia (Draft).md",
     "_posts/recipes/2025-1-24-Food.md",
     "images/notionface.png",
     "images/my-notion-face-portrait.png"
