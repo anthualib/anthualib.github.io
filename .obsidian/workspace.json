@@ -145,7 +145,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ffad6c412b35cf70",
@@ -232,6 +233,9 @@
   },
   "active": "f2728555c6358bdb",
   "lastOpenFiles": [
+    "images/notionfacewebsite.png.sb-e0070a57-JBM0JL",
+    "images/notionfacewebsite.png",
+    "images/notionface copy.png",
     "2025-2-15-Insomnia (Draft).md",
     "_posts/writing/2025-2-15-Insomnia.md",
     "POST DRAFTS/2025 Music.md",
