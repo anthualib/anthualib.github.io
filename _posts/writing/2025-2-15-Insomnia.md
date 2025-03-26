@@ -3,7 +3,9 @@ layout: post
 title: "Common Threads: On Insomnia, The Eternal Night of Stephen King's The Jaunt, and Andrew Bird's Toxic Perfectionism"
 category: writing
 ---
-The stories told in music, books, and other media don't just serve as entertainment-- they have the potential to add new meaning and context to our lives. In that spirit, I enjoy connecting the different content I am consuming to a problem I am facing in real life. Here is an essay (hopefully the first of many) that is a music review, book review, and a reflection on personal experience:
+As a chronic overthinker, I often find connections between the different content I am consuming, regardless how different they are. The stories told in music, books, and other media don't just service as entertainment-- they have potential to add new meanings, contexts, and solutions to our lives
+
+Here is an essay (hopefully the first of many) that is a music review, book review, and a reflection on personal experience:
 
 ### On Insomnia, Part 1
 As the anniversary rolls around, I remember February 2024 as the beginning of a mental health crisis lasting about two months. During that time, I struggled with relentless insomnia.
@@ -62,10 +64,10 @@ Sleep wasn't something to be conquered. There was not a process to be learned, o
 ---
 ### Brought to you by...
 
-These are not actual paid sponsorships, but I thought this would be a fun way to present my recommendations. For those struggling with similar challenges, here are some earnest (and some lighthearted) suggestions of things that helped me. I hope they help you as well!
+Thank you for reading! I wanted to end this post with a segment for further reading, resources, and recommendations. These are not actual paid sponsorships, but I figured it would be a fun way to present these!
 
-1. **[The Sleep Coach School](https://m.youtube.com/@thesleepcoachschool8192):** Based in Eugene, Oregon, a city near and dear to my heart. The **Sleep Coach School** is run by sleep physician Daniel Erichsen, who offers a distinct approach of addressing insomnia by alleviating sleep-related anxiety, rather using often-prescribed tools like "sleep restriction" or "sleep-hygiene" practices. Daniel's philosophy centers around insomnia being a sort of "phobia of sleep" rather than a medical condition, and works to dismantle that fear so that sleep can reoccur naturally. They have a few paid services, but there is SO much value in the countless interviews with survivors that he has posted on Youtube for free.
+For those struggling with similar challenges, here are some earnest (and some lighthearted) suggestions of things that helped me. I hope they help you as well!
+
+1. **[The Sleep Coach School](https://m.youtube.com/@thesleepcoachschool8192):** Based in Eugene, Oregon, a city near and dear to my heart. The **Sleep Coach School** is run by sleep physician Daniel Erichsen, who offers a unique approach of addressing insomnia by alleviating sleep-related anxiety, rather using often-prescribed tools like "sleep restriction" or "sleep-hygiene" practices. Daniel's philosophy centers around insomnia being a sort of "phobia" or "OCD" around sleep, rather than a medical condition, and works to dismantle that fear so that sleep can reoccur naturally. They have a few paid services, but there is SO much value in the countless interviews with survivors that he has posted on Youtube for free. These videos offered me so much comfort during those sleepless nights.
 2. **[Open Path Collective](https://openpathcollective.org):** It seems like insurance is designed to fail when you actually need it. This was my case when I was going through the worst of it and I found out I hadn't had insurance for months, when I thought I did. The **Open Path Collective** is a nonprofit dedicated to providing affordable mental health services to individuals in financial need. Once the one-time membership fee of $65 is paid, you are allowed regular sessions priced between $30 to $70, which is often the copay for many insurance holders. Many therapists offer free consultation to see if you are a good fit, even before paying the $65. I want to emphasize the quality of their network. The therapist I ended up finding through their network is STILL my therapist today, even though I am no longer using the service!
 3. **Diet A&W:** We all have our vices: alcohol, smoking, weed, sex... Mine is sugary drinks! Diet A&W is notable because its one of the only diet sodas without caffeine. A bit of canned joy thats perfect for anyone neurotic about their sleep quality!
-
-Thank you for reading!!!
