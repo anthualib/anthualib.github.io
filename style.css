@@ -316,7 +316,9 @@ body {
 
 .posttitle {
     font-size: 57px;
-    text-align: center; /* Ensures text is horizontally centered */
+    text-align: center;
+    margin: 0 auto;
+    width: 80vw;
 }
 
 .postdate {
