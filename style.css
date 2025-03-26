@@ -1,3 +1,4 @@
+
 /*Fonts stuff*/
 @font-face {
     font-family: "Recoleta";
@@ -851,8 +852,8 @@ background-color:var(--orange);
 }
 
 footer {
-    margin: 0 auto; /* Center the footer horizontally */
-    padding: 0 10px; /* Padding from left and right */
+    margin: 0px; /* Center the footer horizontally */
+    padding: 0px; /* Padding from left and right */
     text-align: center; 
     justify-content: center; 
     display: flex; 
@@ -873,13 +874,14 @@ footer a {
     color: white;
 }
 
-footer .navmenu a:hover {
+footer a:hover {
     color: white;
     border-bottom: 2px solid white;
 }
 
 .footercontainer {
-    width: 100vw;
+    width: auto;
+    margin: 0 auto;
 }
 
 .footernav{
