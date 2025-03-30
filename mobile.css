@@ -553,8 +553,8 @@ padding-left:30px;
 
 .posttitle {
     font-size: 2.3rem;
-    width: 99vw;
     height: 100vh;
+    padding: 20px 0;
 }
 
 .post-title-container {
@@ -565,11 +565,12 @@ padding-left:30px;
 
 .postdate {
     font-size: 1.5rem;
+    padding: 0px 0px 25px;
 }
 
 .postcontent {
-    padding: 5px;
-    width: 100%;
+    padding: 45px 10px 6px 8px;
+    margin: 0px;
 }
 
 .postcontent h3 {
