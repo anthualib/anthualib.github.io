@@ -553,14 +553,13 @@ padding-left:30px;
 
 .posttitle {
     font-size: 2.3rem;
-    height: 100vh;
     padding: 20px 0;
 }
 
 .post-title-container {
-    width: 96%;
+    width: 100%;
     margin: 0px auto;
-    min-height: 430px;
+    min-height: 650px;
 }
 
 .postdate {
@@ -571,10 +570,20 @@ padding-left:30px;
 .postcontent {
     padding: 45px 10px 6px 8px;
     margin: 0px;
+    width: auto;
 }
 
 .postcontent h3 {
     text-align: center;
 }
+
+@media (max-width: 350px) {
+    .post-title-container {
+        width: 100%;
+        margin: 0px auto;
+        min-height: 400px;
+        height: auto;
+      }
+  }
     
       }
