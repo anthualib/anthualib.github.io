@@ -51,12 +51,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/writing/2025-2-15-Insomnia.md",
+                "file": "POST DRAFTS/2025 Music.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-2-15-Insomnia"
+              "title": "2025 Music"
+            }
+          },
+          {
+            "id": "fee4d01b3d3464b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/writing/2025-3-29-Music.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "2025-3-29-Music"
             }
           },
           {
@@ -88,7 +102,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -230,14 +244,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f2728555c6358bdb",
+  "active": "fee4d01b3d3464b2",
   "lastOpenFiles": [
+    "POST DRAFTS/2025 Music.md",
+    "_posts/writing/2025-3-29-Music.md",
+    "writing.md",
+    "_posts/writing/2025-2-15-Insomnia.md",
+    "image-url.md",
     "images/notionfacewebsite.png.sb-e0070a57-JBM0JL",
     "images/notionfacewebsite.png",
     "images/notionface copy.png",
     "2025-2-15-Insomnia (Draft).md",
-    "_posts/writing/2025-2-15-Insomnia.md",
-    "POST DRAFTS/2025 Music.md",
     "testpost.html",
     "testblog.html",
     "images/onedot.png",
