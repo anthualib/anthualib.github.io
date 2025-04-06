@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/writing/2025-3-29-Music.md",
+                "file": "_posts/writing/2025-4-05-Music.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-3-29-Music"
+              "title": "2025-4-05-Music"
             }
           },
           {
@@ -159,8 +159,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ffad6c412b35cf70",
@@ -245,12 +244,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fee4d01b3d3464b2",
+  "active": "af7812670b21a489",
   "lastOpenFiles": [
+    "POST DRAFTS/2025 Music.md",
+    "_posts/writing/2025-4-05-Music.md",
+    "_layouts/music.html",
     "_posts/writing/2025-1-24-Backend.md",
     "Metadata Librarian.md",
-    "_posts/writing/2025-3-29-Music.md",
-    "POST DRAFTS/2025 Music.md",
     "writing.md",
     "_posts/writing/2025-2-15-Insomnia.md",
     "image-url.md",
