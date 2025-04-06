@@ -324,6 +324,7 @@ body {
 .postdate {
     font-size: 30px;
     text-align: center; /* Ensures text is horizontally centered */
+    flex
 }
 
 .postcontent {
