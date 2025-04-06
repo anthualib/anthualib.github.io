@@ -159,7 +159,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ffad6c412b35cf70",
@@ -246,8 +247,10 @@
   },
   "active": "fee4d01b3d3464b2",
   "lastOpenFiles": [
-    "POST DRAFTS/2025 Music.md",
+    "_posts/writing/2025-1-24-Backend.md",
+    "Metadata Librarian.md",
     "_posts/writing/2025-3-29-Music.md",
+    "POST DRAFTS/2025 Music.md",
     "writing.md",
     "_posts/writing/2025-2-15-Insomnia.md",
     "image-url.md",
@@ -262,8 +265,6 @@
     "images/threedots.png",
     "POST DRAFTS/Motivations.md",
     "POST DRAFTS",
-    "_posts/writing/2025-1-24-Backend.md",
-    "Metadata Librarian.md",
     "Can42.md",
     "Can9.md",
     "_posts/writing/2025-3-2-Book-Bans-and-AAPI-Safety.md",
