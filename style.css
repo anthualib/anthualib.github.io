@@ -482,6 +482,12 @@ nav {
   .navleft {
     padding: 5px 20px 5px;
   }
+
+  .navleft h1 {
+    color: var(--orange);
+    display: flex; /* Enables flexbox for alignment */
+    align-items: center; /* Centers content vertically */
+  }
   
   .navright {
     padding: 5px 20px 5px;

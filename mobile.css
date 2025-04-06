@@ -41,6 +41,11 @@ margin: 5px;
         min-width: 193px;
     }
 
+    .navleft a {
+        display: flex; /* Enables flexbox for alignment */
+        align-items: center; /* Centers content vertically */
+    }
+
     .navleft h1 {
         color: var(--orange)
     }
