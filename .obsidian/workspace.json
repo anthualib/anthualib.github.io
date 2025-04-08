@@ -8,41 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "de18d593cb4ec4f8",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "f4f936a77d1759ea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/writing/2025-1-24-Backend.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "2025-1-24-Backend"
-            }
-          },
-          {
             "id": "65f7b9812257d30a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "POST DRAFTS/Motivations.md",
+                "file": "_posts/writing/2025-4-05-Music.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Motivations"
+              "title": "2025-4-05-Music"
             }
           },
           {
@@ -101,8 +77,7 @@
               "title": "Metadata Librarian"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -159,7 +134,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ffad6c412b35cf70",
@@ -244,13 +220,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fee4d01b3d3464b2",
+  "active": "65f7b9812257d30a",
   "lastOpenFiles": [
-    "_posts/writing/2025-2-15-Insomnia.md",
-    "_posts/writing/2025-4-05-Music.md",
-    "POST DRAFTS/2025 Music.md",
-    "_layouts/music.html",
+    "POST DRAFTS/Motivations.md",
     "_posts/writing/2025-1-24-Backend.md",
+    "POST DRAFTS/2025 Music.md",
+    "_posts/writing/2025-4-05-Music.md",
+    "_posts/writing/2025-2-15-Insomnia.md",
+    "_layouts/music.html",
     "Metadata Librarian.md",
     "writing.md",
     "image-url.md",
@@ -263,7 +240,6 @@
     "images/onedot.png",
     "images/Screenshot 2025-03-15 at 9.10.32 PM.png",
     "images/threedots.png",
-    "POST DRAFTS/Motivations.md",
     "POST DRAFTS",
     "Can42.md",
     "Can9.md",
