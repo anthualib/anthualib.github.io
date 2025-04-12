@@ -134,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ffad6c412b35cf70",
@@ -222,13 +221,13 @@
   },
   "active": "65f7b9812257d30a",
   "lastOpenFiles": [
+    "_posts/writing/2025-2-15-Insomnia.md",
+    "Metadata Librarian.md",
+    "_posts/writing/2025-4-05-Music.md",
+    "POST DRAFTS/2025 Music.md",
     "POST DRAFTS/Motivations.md",
     "_posts/writing/2025-1-24-Backend.md",
-    "POST DRAFTS/2025 Music.md",
-    "_posts/writing/2025-4-05-Music.md",
-    "_posts/writing/2025-2-15-Insomnia.md",
     "_layouts/music.html",
-    "Metadata Librarian.md",
     "writing.md",
     "image-url.md",
     "images/notionfacewebsite.png.sb-e0070a57-JBM0JL",
