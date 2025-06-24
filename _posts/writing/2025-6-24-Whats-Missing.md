@@ -1,0 +1,23 @@
+---
+layout: post
+title: "What's Missing in the Numbers: Measuring the Value of Student-Staff Relationships in Libraries"
+category: writing
+---
+
+Library professionals are increasingly grappling with what Lynn Connaway and Marie L. Radford describe as "the assessment imperative", or the growing pressure from funders, accrediting bodies, and administrators to prove their worth through measurable outcomes. In their recent work on research methods in library science, they note that this shift was formalized as early as 2011 when the Association of College and Research Libraries declared that "librarians are increasingly called upon to document and articulate the value of academic and research libraries and their contribution to institutional mission and goals."
+
+The issue is the "value" is such a squishy concept, especially in a field that is intrinsically rooted relationship-building. To repeat my mantra: libraries and their workers deal in people, not in books. While I understand that libraries face real budget pressures and accountability demands, I question: what gets lost in translation in chasing metrics and numbers?
+
+This question just became urgently relevant, as recently as 12 hours before this was posted. In response to the [recent federal funding changes](https://www.wpr.org/news/uw-madison-budget-cuts-7-percent-for-departments), the Dean of the UW-Madison General Library System announced our own 7% budget reduction affecting collections, technology, student staff, and potentially some positions. As administrators assess and evaluate these cuts, I can't help but ask: do our current tools actually capture the most valuable work happening in libraries?
+
+---
+
+As a student supervisor who splits time between circulation and mentoring student workers, I've realized my strongest skill is relationship building, which is something that feels almost impossible to assess using traditional tools. I went through a bit of imposter syndrome where I felt guilty about this strength because it doesn't always feel like "work." At some point, my supervisor assured me how valuable it is and that it's a relatively rare skill set in our workplace. This got me wondering: can "being liked by my students" actually count as a professional accomplishment?
+
+The most rewarding part of my job is watching student workers transform from nervous freshmen into confident team leaders who mentor newer hires. I see shy students find their voice through public service and struggling students develop organizational skills through individual projects. And if anything at all, I hope to simply offer a workplace where they can depend on to find belonging and community-- an escape from the stress of all other aspects of student life. From my frontline perspective, our mentoring relationship absolutely contributes to their growth, but some may argue I can't claim my supervision "caused" these changes. Too many other variables: their classes, personal life, other campus experiences.
+
+This limitation feels frustrating when you're living the daily reality of student development, but I get why it matters for credible research. Still, it highlights a tension between the accountability pressure discussed in the readings and the actual human work that drew me to libraries in the first place. How do you use surveys or focus groups to measure relationship quality? What assessment tool captures the confidence that develops through trusted mentorship?
+
+This actually hits the nail on my biggest pet peeve when it comes to diversity endeavors in higher education. So much emphasis is placed on enrollment statistics and buzz words like “diverse hiring” or “inclusive recruitment”, but I often ask: “do employees and students of minority backgrounds actually have access to the support they need to both be successful or feel understood by their respective academic and professional communities?”
+
+The kind of relationship-building and mentoring I do with student workers might be exactly what helps underrepresented students succeed in higher education, but it's invisible in diversity metrics. When budget cuts come around, will administrators value the measurable diversity initiatives over the harder-to-quantify support work that actually helps students feel they belong? It seems like we're caught in the same trap the readings describe: prioritizing what's easy to count, over what actually makes the difference in people's lives.
